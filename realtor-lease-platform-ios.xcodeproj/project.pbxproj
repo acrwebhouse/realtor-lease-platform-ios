@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83B71B83284E37F9009254B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B71B82284E37F9009254B9 /* AppDelegate.swift */; };
+		83B71B85284E37F9009254B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B71B84284E37F9009254B9 /* SceneDelegate.swift */; };
+		83B71B87284E37F9009254B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B71B86284E37F9009254B9 /* ViewController.swift */; };
+		83B71B8A284E37F9009254B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B71B88284E37F9009254B9 /* Main.storyboard */; };
+		83B71B8C284E37FB009254B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B71B8B284E37FB009254B9 /* Assets.xcassets */; };
+		83B71B8F284E37FB009254B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B71B8D284E37FB009254B9 /* LaunchScreen.storyboard */; };
+		83B71B9A284E37FB009254B9 /* realtor_lease_platform_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B71B99284E37FB009254B9 /* realtor_lease_platform_iosTests.swift */; };
+		83B71BA5284E37FB009254B9 /* realtor_lease_platform_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B71BA4284E37FB009254B9 /* realtor_lease_platform_iosUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83B71B96284E37FB009254B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83B71B77284E37F9009254B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83B71B7E284E37F9009254B9;
+			remoteInfo = "realtor-lease-platform-ios";
+		};
+		83B71BA1284E37FB009254B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83B71B77284E37F9009254B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83B71B7E284E37F9009254B9;
+			remoteInfo = "realtor-lease-platform-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		83B71B7F284E37F9009254B9 /* realtor-lease-platform-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "realtor-lease-platform-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B71B82284E37F9009254B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		83B71B84284E37F9009254B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		83B71B86284E37F9009254B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83B71B89284E37F9009254B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83B71B8B284E37FB009254B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83B71B8E284E37FB009254B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83B71B90284E37FB009254B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83B71B95284E37FB009254B9 /* realtor-lease-platform-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "realtor-lease-platform-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B71B99284E37FB009254B9 /* realtor_lease_platform_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = realtor_lease_platform_iosTests.swift; sourceTree = "<group>"; };
+		83B71B9B284E37FB009254B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83B71BA0284E37FB009254B9 /* realtor-lease-platform-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "realtor-lease-platform-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B71BA4284E37FB009254B9 /* realtor_lease_platform_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = realtor_lease_platform_iosUITests.swift; sourceTree = "<group>"; };
+		83B71BA6284E37FB009254B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83B71B7C284E37F9009254B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B71B92284E37FB009254B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B71B9D284E37FB009254B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83B71B76284E37F9009254B9 = {
+			isa = PBXGroup;
+			children = (
+				83B71B81284E37F9009254B9 /* realtor-lease-platform-ios */,
+				83B71B98284E37FB009254B9 /* realtor-lease-platform-iosTests */,
+				83B71BA3284E37FB009254B9 /* realtor-lease-platform-iosUITests */,
+				83B71B80284E37F9009254B9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		83B71B80284E37F9009254B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83B71B7F284E37F9009254B9 /* realtor-lease-platform-ios.app */,
+				83B71B95284E37FB009254B9 /* realtor-lease-platform-iosTests.xctest */,
+				83B71BA0284E37FB009254B9 /* realtor-lease-platform-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83B71B81284E37F9009254B9 /* realtor-lease-platform-ios */ = {
+			isa = PBXGroup;
+			children = (
+				83B71B82284E37F9009254B9 /* AppDelegate.swift */,
+				83B71B84284E37F9009254B9 /* SceneDelegate.swift */,
+				83B71B86284E37F9009254B9 /* ViewController.swift */,
+				83B71B88284E37F9009254B9 /* Main.storyboard */,
+				83B71B8B284E37FB009254B9 /* Assets.xcassets */,
+				83B71B8D284E37FB009254B9 /* LaunchScreen.storyboard */,
+				83B71B90284E37FB009254B9 /* Info.plist */,
+			);
+			path = "realtor-lease-platform-ios";
+			sourceTree = "<group>";
+		};
+		83B71B98284E37FB009254B9 /* realtor-lease-platform-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				83B71B99284E37FB009254B9 /* realtor_lease_platform_iosTests.swift */,
+				83B71B9B284E37FB009254B9 /* Info.plist */,
+			);
+			path = "realtor-lease-platform-iosTests";
+			sourceTree = "<group>";
+		};
+		83B71BA3284E37FB009254B9 /* realtor-lease-platform-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				83B71BA4284E37FB009254B9 /* realtor_lease_platform_iosUITests.swift */,
+				83B71BA6284E37FB009254B9 /* Info.plist */,
+			);
+			path = "realtor-lease-platform-iosUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83B71B7E284E37F9009254B9 /* realtor-lease-platform-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83B71BA9284E37FB009254B9 /* Build configuration list for PBXNativeTarget "realtor-lease-platform-ios" */;
+			buildPhases = (
+				83B71B7B284E37F9009254B9 /* Sources */,
+				83B71B7C284E37F9009254B9 /* Frameworks */,
+				83B71B7D284E37F9009254B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "realtor-lease-platform-ios";
+			productName = "realtor-lease-platform-ios";
+			productReference = 83B71B7F284E37F9009254B9 /* realtor-lease-platform-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83B71B94284E37FB009254B9 /* realtor-lease-platform-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83B71BAC284E37FB009254B9 /* Build configuration list for PBXNativeTarget "realtor-lease-platform-iosTests" */;
+			buildPhases = (
+				83B71B91284E37FB009254B9 /* Sources */,
+				83B71B92284E37FB009254B9 /* Frameworks */,
+				83B71B93284E37FB009254B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83B71B97284E37FB009254B9 /* PBXTargetDependency */,
+			);
+			name = "realtor-lease-platform-iosTests";
+			productName = "realtor-lease-platform-iosTests";
+			productReference = 83B71B95284E37FB009254B9 /* realtor-lease-platform-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		83B71B9F284E37FB009254B9 /* realtor-lease-platform-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83B71BAF284E37FB009254B9 /* Build configuration list for PBXNativeTarget "realtor-lease-platform-iosUITests" */;
+			buildPhases = (
+				83B71B9C284E37FB009254B9 /* Sources */,
+				83B71B9D284E37FB009254B9 /* Frameworks */,
+				83B71B9E284E37FB009254B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83B71BA2284E37FB009254B9 /* PBXTargetDependency */,
+			);
+			name = "realtor-lease-platform-iosUITests";
+			productName = "realtor-lease-platform-iosUITests";
+			productReference = 83B71BA0284E37FB009254B9 /* realtor-lease-platform-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83B71B77284E37F9009254B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					83B71B7E284E37F9009254B9 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					83B71B94284E37FB009254B9 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 83B71B7E284E37F9009254B9;
+					};
+					83B71B9F284E37FB009254B9 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 83B71B7E284E37F9009254B9;
+					};
+				};
+			};
+			buildConfigurationList = 83B71B7A284E37F9009254B9 /* Build configuration list for PBXProject "realtor-lease-platform-ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83B71B76284E37F9009254B9;
+			productRefGroup = 83B71B80284E37F9009254B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83B71B7E284E37F9009254B9 /* realtor-lease-platform-ios */,
+				83B71B94284E37FB009254B9 /* realtor-lease-platform-iosTests */,
+				83B71B9F284E37FB009254B9 /* realtor-lease-platform-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83B71B7D284E37F9009254B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B71B8F284E37FB009254B9 /* LaunchScreen.storyboard in Resources */,
+				83B71B8C284E37FB009254B9 /* Assets.xcassets in Resources */,
+				83B71B8A284E37F9009254B9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B71B93284E37FB009254B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B71B9E284E37FB009254B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83B71B7B284E37F9009254B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B71B87284E37F9009254B9 /* ViewController.swift in Sources */,
+				83B71B83284E37F9009254B9 /* AppDelegate.swift in Sources */,
+				83B71B85284E37F9009254B9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B71B91284E37FB009254B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B71B9A284E37FB009254B9 /* realtor_lease_platform_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B71B9C284E37FB009254B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B71BA5284E37FB009254B9 /* realtor_lease_platform_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83B71B97284E37FB009254B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83B71B7E284E37F9009254B9 /* realtor-lease-platform-ios */;
+			targetProxy = 83B71B96284E37FB009254B9 /* PBXContainerItemProxy */;
+		};
+		83B71BA2284E37FB009254B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83B71B7E284E37F9009254B9 /* realtor-lease-platform-ios */;
+			targetProxy = 83B71BA1284E37FB009254B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		83B71B88284E37F9009254B9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83B71B89284E37F9009254B9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		83B71B8D284E37FB009254B9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83B71B8E284E37FB009254B9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83B71BA7284E37FB009254B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		83B71BA8284E37FB009254B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83B71BAA284E37FB009254B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TBV3M778UP;
+				INFOPLIST_FILE = "realtor-lease-platform-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Chris.realtor-lease-platform-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83B71BAB284E37FB009254B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TBV3M778UP;
+				INFOPLIST_FILE = "realtor-lease-platform-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Chris.realtor-lease-platform-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		83B71BAD284E37FB009254B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TBV3M778UP;
+				INFOPLIST_FILE = "realtor-lease-platform-iosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Chris.realtor-lease-platform-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/realtor-lease-platform-ios.app/realtor-lease-platform-ios";
+			};
+			name = Debug;
+		};
+		83B71BAE284E37FB009254B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TBV3M778UP;
+				INFOPLIST_FILE = "realtor-lease-platform-iosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Chris.realtor-lease-platform-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/realtor-lease-platform-ios.app/realtor-lease-platform-ios";
+			};
+			name = Release;
+		};
+		83B71BB0284E37FB009254B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TBV3M778UP;
+				INFOPLIST_FILE = "realtor-lease-platform-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Chris.realtor-lease-platform-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "realtor-lease-platform-ios";
+			};
+			name = Debug;
+		};
+		83B71BB1284E37FB009254B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TBV3M778UP;
+				INFOPLIST_FILE = "realtor-lease-platform-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Chris.realtor-lease-platform-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "realtor-lease-platform-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83B71B7A284E37F9009254B9 /* Build configuration list for PBXProject "realtor-lease-platform-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83B71BA7284E37FB009254B9 /* Debug */,
+				83B71BA8284E37FB009254B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83B71BA9284E37FB009254B9 /* Build configuration list for PBXNativeTarget "realtor-lease-platform-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83B71BAA284E37FB009254B9 /* Debug */,
+				83B71BAB284E37FB009254B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83B71BAC284E37FB009254B9 /* Build configuration list for PBXNativeTarget "realtor-lease-platform-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83B71BAD284E37FB009254B9 /* Debug */,
+				83B71BAE284E37FB009254B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83B71BAF284E37FB009254B9 /* Build configuration list for PBXNativeTarget "realtor-lease-platform-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83B71BB0284E37FB009254B9 /* Debug */,
+				83B71BB1284E37FB009254B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83B71B77284E37F9009254B9 /* Project object */;
+}
