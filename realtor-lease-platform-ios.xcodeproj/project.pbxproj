@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8306E5502D19E7729F218C0F /* Pods_realtor_lease_platform_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44FB5CBA492A933E92A88DF /* Pods_realtor_lease_platform_ios.framework */; };
 		83B71B83284E37F9009254B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B71B82284E37F9009254B9 /* AppDelegate.swift */; };
 		83B71B85284E37F9009254B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B71B84284E37F9009254B9 /* SceneDelegate.swift */; };
 		83B71B87284E37F9009254B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B71B86284E37F9009254B9 /* ViewController.swift */; };
@@ -15,6 +16,8 @@
 		83B71B8F284E37FB009254B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B71B8D284E37FB009254B9 /* LaunchScreen.storyboard */; };
 		83B71B9A284E37FB009254B9 /* realtor_lease_platform_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B71B99284E37FB009254B9 /* realtor_lease_platform_iosTests.swift */; };
 		83B71BA5284E37FB009254B9 /* realtor_lease_platform_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B71BA4284E37FB009254B9 /* realtor_lease_platform_iosUITests.swift */; };
+		9648F93CEC409C82CDE7CED0 /* Pods_realtor_lease_platform_ios_realtor_lease_platform_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B87838956F688777FEF293 /* Pods_realtor_lease_platform_ios_realtor_lease_platform_iosUITests.framework */; };
+		AA87E5144935C40C2D0D6D36 /* Pods_realtor_lease_platform_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00793D2C904B0FAF1EC275CA /* Pods_realtor_lease_platform_iosTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00793D2C904B0FAF1EC275CA /* Pods_realtor_lease_platform_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_realtor_lease_platform_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0221BCFFD4F4FC712A5678B5 /* Pods-realtor-lease-platform-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-realtor-lease-platform-ios.release.xcconfig"; path = "Target Support Files/Pods-realtor-lease-platform-ios/Pods-realtor-lease-platform-ios.release.xcconfig"; sourceTree = "<group>"; };
+		5531F2E73D55771CD473B3B0 /* Pods-realtor-lease-platform-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-realtor-lease-platform-ios.debug.xcconfig"; path = "Target Support Files/Pods-realtor-lease-platform-ios/Pods-realtor-lease-platform-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		83B71B7F284E37F9009254B9 /* realtor-lease-platform-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "realtor-lease-platform-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B71B82284E37F9009254B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83B71B84284E37F9009254B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		83B71BA0284E37FB009254B9 /* realtor-lease-platform-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "realtor-lease-platform-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B71BA4284E37FB009254B9 /* realtor_lease_platform_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = realtor_lease_platform_iosUITests.swift; sourceTree = "<group>"; };
 		83B71BA6284E37FB009254B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85F0F800D2C0900E6FF46B9D /* Pods-realtor-lease-platform-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-realtor-lease-platform-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-realtor-lease-platform-iosTests/Pods-realtor-lease-platform-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		912AB97E08CF9B19E10AB7A0 /* Pods-realtor-lease-platform-ios-realtor-lease-platform-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-realtor-lease-platform-ios-realtor-lease-platform-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-realtor-lease-platform-ios-realtor-lease-platform-iosUITests/Pods-realtor-lease-platform-ios-realtor-lease-platform-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		93B87838956F688777FEF293 /* Pods_realtor_lease_platform_ios_realtor_lease_platform_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_realtor_lease_platform_ios_realtor_lease_platform_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A71350A6C33E9077CC843A85 /* Pods-realtor-lease-platform-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-realtor-lease-platform-iosTests.release.xcconfig"; path = "Target Support Files/Pods-realtor-lease-platform-iosTests/Pods-realtor-lease-platform-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		BC550F08AD0461FE7CFC45AA /* Pods-realtor-lease-platform-ios-realtor-lease-platform-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-realtor-lease-platform-ios-realtor-lease-platform-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-realtor-lease-platform-ios-realtor-lease-platform-iosUITests/Pods-realtor-lease-platform-ios-realtor-lease-platform-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C44FB5CBA492A933E92A88DF /* Pods_realtor_lease_platform_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_realtor_lease_platform_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8306E5502D19E7729F218C0F /* Pods_realtor_lease_platform_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA87E5144935C40C2D0D6D36 /* Pods_realtor_lease_platform_iosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9648F93CEC409C82CDE7CED0 /* Pods_realtor_lease_platform_ios_realtor_lease_platform_iosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6CF9BF933D00296E35796479 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C44FB5CBA492A933E92A88DF /* Pods_realtor_lease_platform_ios.framework */,
+				93B87838956F688777FEF293 /* Pods_realtor_lease_platform_ios_realtor_lease_platform_iosUITests.framework */,
+				00793D2C904B0FAF1EC275CA /* Pods_realtor_lease_platform_iosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		83B71B76284E37F9009254B9 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,8 @@
 				83B71B98284E37FB009254B9 /* realtor-lease-platform-iosTests */,
 				83B71BA3284E37FB009254B9 /* realtor-lease-platform-iosUITests */,
 				83B71B80284E37F9009254B9 /* Products */,
+				CCE98EB4B5657C0F7A71F856 /* Pods */,
+				6CF9BF933D00296E35796479 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +155,20 @@
 			path = "realtor-lease-platform-iosUITests";
 			sourceTree = "<group>";
 		};
+		CCE98EB4B5657C0F7A71F856 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5531F2E73D55771CD473B3B0 /* Pods-realtor-lease-platform-ios.debug.xcconfig */,
+				0221BCFFD4F4FC712A5678B5 /* Pods-realtor-lease-platform-ios.release.xcconfig */,
+				BC550F08AD0461FE7CFC45AA /* Pods-realtor-lease-platform-ios-realtor-lease-platform-iosUITests.debug.xcconfig */,
+				912AB97E08CF9B19E10AB7A0 /* Pods-realtor-lease-platform-ios-realtor-lease-platform-iosUITests.release.xcconfig */,
+				85F0F800D2C0900E6FF46B9D /* Pods-realtor-lease-platform-iosTests.debug.xcconfig */,
+				A71350A6C33E9077CC843A85 /* Pods-realtor-lease-platform-iosTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +176,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83B71BA9284E37FB009254B9 /* Build configuration list for PBXNativeTarget "realtor-lease-platform-ios" */;
 			buildPhases = (
+				21B4A3A8BD4663242745E1C6 /* [CP] Check Pods Manifest.lock */,
 				83B71B7B284E37F9009254B9 /* Sources */,
 				83B71B7C284E37F9009254B9 /* Frameworks */,
 				83B71B7D284E37F9009254B9 /* Resources */,
@@ -152,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83B71BAC284E37FB009254B9 /* Build configuration list for PBXNativeTarget "realtor-lease-platform-iosTests" */;
 			buildPhases = (
+				764D659077405DA4F367CD5D /* [CP] Check Pods Manifest.lock */,
 				83B71B91284E37FB009254B9 /* Sources */,
 				83B71B92284E37FB009254B9 /* Frameworks */,
 				83B71B93284E37FB009254B9 /* Resources */,
@@ -170,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83B71BAF284E37FB009254B9 /* Build configuration list for PBXNativeTarget "realtor-lease-platform-iosUITests" */;
 			buildPhases = (
+				6EF057A62B0C2B7F348CA1BA /* [CP] Check Pods Manifest.lock */,
 				83B71B9C284E37FB009254B9 /* Sources */,
 				83B71B9D284E37FB009254B9 /* Frameworks */,
 				83B71B9E284E37FB009254B9 /* Resources */,
@@ -252,6 +296,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21B4A3A8BD4663242745E1C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-realtor-lease-platform-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EF057A62B0C2B7F348CA1BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-realtor-lease-platform-ios-realtor-lease-platform-iosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		764D659077405DA4F367CD5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-realtor-lease-platform-iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		83B71B7B284E37F9009254B9 /* Sources */ = {
@@ -433,6 +546,7 @@
 		};
 		83B71BAA284E37FB009254B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5531F2E73D55771CD473B3B0 /* Pods-realtor-lease-platform-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +566,7 @@
 		};
 		83B71BAB284E37FB009254B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0221BCFFD4F4FC712A5678B5 /* Pods-realtor-lease-platform-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +586,7 @@
 		};
 		83B71BAD284E37FB009254B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85F0F800D2C0900E6FF46B9D /* Pods-realtor-lease-platform-iosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +609,7 @@
 		};
 		83B71BAE284E37FB009254B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A71350A6C33E9077CC843A85 /* Pods-realtor-lease-platform-iosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +632,7 @@
 		};
 		83B71BB0284E37FB009254B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC550F08AD0461FE7CFC45AA /* Pods-realtor-lease-platform-ios-realtor-lease-platform-iosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +653,7 @@
 		};
 		83B71BB1284E37FB009254B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 912AB97E08CF9B19E10AB7A0 /* Pods-realtor-lease-platform-ios-realtor-lease-platform-iosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

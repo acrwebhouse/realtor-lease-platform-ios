@@ -14,7 +14,7 @@ class ViewController: UIViewController , WKScriptMessageHandler  {
     }
     
     var webView: WKWebView? = nil
-    var url = "http://34.81.209.11:8080"
+    var url = "https://matchrentdev.com/"
     override func viewDidLoad() {
         super.viewDidLoad()
         let contentController = WKUserContentController();

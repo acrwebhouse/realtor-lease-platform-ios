@@ -1,0 +1,37 @@
+# Xcode
+.DS_Store
+build/
+DerivedData/
+.idea/
+*.xcuserstate
+*.xcworkspace
+
+# Swift Package Manager
+/.build
+
+# CocoaPods
+Pods/
+*.lock
+*.xcworkspace
+
+# Carthage
+/Carthage/Build
+
+# Compiled source
+/**/*.mo
+/**/*.xib
+/**/*.storyboardc
+
+# Generated files
+/swift-files-generated-by-sourcery/
+
+# Configuration files
+/*.xcconfig
+/*.xcworkspace
+
+# Playgrounds
+timeline.xctimeline
+.playground
+
+# Swift Package Manager
+Package.pins
