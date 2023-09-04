@@ -13,10 +13,27 @@ class ViewController: UIViewController , WKScriptMessageHandler  {
         
     }
     
+    
+    let url = Constants.SERVER_URL
+    var factory : Factory? = nil
     var webView: WKWebView? = nil
-    var url = "https://matchrentdev.com/"
+    var controlModel: Model? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
+        initObject()
+        initGUI()
+        // Do any additional setup after loading the view.
+    }
+    
+    func initObject() {
+        factory = Factory()
+        controlModel = factory?.createModel()
+        controlModel?.setFactory(factory: factory!)
+        controlModel?.setViewController(ViewController: self)
+    }
+    
+    func initGUI() {
+        
         let contentController = WKUserContentController();
         let config = WKWebViewConfiguration()
         config.userContentController = contentController
@@ -25,13 +42,19 @@ class ViewController: UIViewController , WKScriptMessageHandler  {
                     frame: CGRect(x:0, y:20, width: self.view.frame.width, height:self.view.frame.height-20),
                     configuration: config
                 )
-        let request = URLRequest(url: URL(string: url)!)
-        //http://34.81.209.11:8080/
-        self.webView!.load(request)
+        
+        
+//        let request = URLRequest(url: URL(string: url)!)
+//        self.webView!.load(request)
+        
+        
         self.view.addSubview(self.webView!)
-        // Do any additional setup after loading the view.
+        
+//        controlModel?.changePage(webView: webView ?? WKWebView(), page: Constants.SERVER_PAGE_NAME)
+//        controlModel?.changePage(webView: webView ?? WKWebView(), page: Constants.NETWORK_ERROR_PAGE_NAME)
+        controlModel?.changePage(webView: webView ?? WKWebView(), page: Constants.SERVER_PAGE_NAME)
+        
     }
-
 
 }
 

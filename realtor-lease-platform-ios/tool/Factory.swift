@@ -8,5 +8,11 @@
 import Foundation
 
 class Factory {
+    func createModel() -> Model{
+        return Model()
+    }
     
+    func createHttpClient() -> HttpClient{
+        return HttpClient()
+    }
 }
