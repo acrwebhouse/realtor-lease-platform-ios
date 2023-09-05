@@ -16,7 +16,6 @@
 		831FE1B72AA621B6006C32FE /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831FE1B62AA621B6006C32FE /* Controller.swift */; };
 		831FE1B92AA622B8006C32FE /* ServerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831FE1B82AA622B8006C32FE /* ServerController.swift */; };
 		831FE1BD2AA62331006C32FE /* NetworkErrorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831FE1BC2AA62331006C32FE /* NetworkErrorController.swift */; };
-		831FE1C32AA63072006C32FE /* networkErrorWeb.html in Resources */ = {isa = PBXBuildFile; fileRef = 831FE1C22AA63071006C32FE /* networkErrorWeb.html */; };
 		83B71B83284E37F9009254B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B71B82284E37F9009254B9 /* AppDelegate.swift */; };
 		83B71B85284E37F9009254B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B71B84284E37F9009254B9 /* SceneDelegate.swift */; };
 		83B71B87284E37F9009254B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B71B86284E37F9009254B9 /* ViewController.swift */; };
@@ -25,6 +24,7 @@
 		83B71B8F284E37FB009254B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B71B8D284E37FB009254B9 /* LaunchScreen.storyboard */; };
 		83B71B9A284E37FB009254B9 /* realtor_lease_platform_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B71B99284E37FB009254B9 /* realtor_lease_platform_iosTests.swift */; };
 		83B71BA5284E37FB009254B9 /* realtor_lease_platform_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B71BA4284E37FB009254B9 /* realtor_lease_platform_iosUITests.swift */; };
+		83C85C5F2AA79D6E00D41E26 /* GUI in Resources */ = {isa = PBXBuildFile; fileRef = 83C85C5E2AA79D6E00D41E26 /* GUI */; };
 		9648F93CEC409C82CDE7CED0 /* Pods_realtor_lease_platform_ios_realtor_lease_platform_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B87838956F688777FEF293 /* Pods_realtor_lease_platform_ios_realtor_lease_platform_iosUITests.framework */; };
 		AA87E5144935C40C2D0D6D36 /* Pods_realtor_lease_platform_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00793D2C904B0FAF1EC275CA /* Pods_realtor_lease_platform_iosTests.framework */; };
 /* End PBXBuildFile section */
@@ -58,7 +58,6 @@
 		831FE1B62AA621B6006C32FE /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		831FE1B82AA622B8006C32FE /* ServerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerController.swift; sourceTree = "<group>"; };
 		831FE1BC2AA62331006C32FE /* NetworkErrorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorController.swift; sourceTree = "<group>"; };
-		831FE1C22AA63071006C32FE /* networkErrorWeb.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = networkErrorWeb.html; path = "realtor-lease-platform-ios/networkErrorWeb.html"; sourceTree = "<group>"; };
 		83B71B7F284E37F9009254B9 /* realtor-lease-platform-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "realtor-lease-platform-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B71B82284E37F9009254B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83B71B84284E37F9009254B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +72,7 @@
 		83B71BA0284E37FB009254B9 /* realtor-lease-platform-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "realtor-lease-platform-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B71BA4284E37FB009254B9 /* realtor_lease_platform_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = realtor_lease_platform_iosUITests.swift; sourceTree = "<group>"; };
 		83B71BA6284E37FB009254B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83C85C5E2AA79D6E00D41E26 /* GUI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GUI; sourceTree = "<group>"; };
 		85F0F800D2C0900E6FF46B9D /* Pods-realtor-lease-platform-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-realtor-lease-platform-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-realtor-lease-platform-iosTests/Pods-realtor-lease-platform-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		912AB97E08CF9B19E10AB7A0 /* Pods-realtor-lease-platform-ios-realtor-lease-platform-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-realtor-lease-platform-ios-realtor-lease-platform-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-realtor-lease-platform-ios-realtor-lease-platform-iosUITests/Pods-realtor-lease-platform-ios-realtor-lease-platform-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		93B87838956F688777FEF293 /* Pods_realtor_lease_platform_ios_realtor_lease_platform_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_realtor_lease_platform_ios_realtor_lease_platform_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,25 +148,9 @@
 			path = controller;
 			sourceTree = "<group>";
 		};
-		831FE1BE2AA6241A006C32FE /* GUI */ = {
-			isa = PBXGroup;
-			children = (
-				831FE1BF2AA62431006C32FE /* views */,
-			);
-			path = GUI;
-			sourceTree = "<group>";
-		};
-		831FE1BF2AA62431006C32FE /* views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = views;
-			sourceTree = "<group>";
-		};
 		83B71B76284E37F9009254B9 = {
 			isa = PBXGroup;
 			children = (
-				831FE1C22AA63071006C32FE /* networkErrorWeb.html */,
 				83B71B81284E37F9009254B9 /* realtor-lease-platform-ios */,
 				83B71B98284E37FB009254B9 /* realtor-lease-platform-iosTests */,
 				83B71BA3284E37FB009254B9 /* realtor-lease-platform-iosUITests */,
@@ -189,7 +173,7 @@
 		83B71B81284E37F9009254B9 /* realtor-lease-platform-ios */ = {
 			isa = PBXGroup;
 			children = (
-				831FE1BE2AA6241A006C32FE /* GUI */,
+				83C85C5E2AA79D6E00D41E26 /* GUI */,
 				831FE1B52AA62192006C32FE /* controller */,
 				831FE1AC2AA616A6006C32FE /* tool */,
 				831FE1A92AA61595006C32FE /* define */,
@@ -341,8 +325,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C85C5F2AA79D6E00D41E26 /* GUI in Resources */,
 				83B71B8F284E37FB009254B9 /* LaunchScreen.storyboard in Resources */,
-				831FE1C32AA63072006C32FE /* networkErrorWeb.html in Resources */,
 				83B71B8C284E37FB009254B9 /* Assets.xcassets in Resources */,
 				83B71B8A284E37F9009254B9 /* Main.storyboard in Resources */,
 			);

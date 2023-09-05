@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import WebKit
 
 class Factory {
     func createModel() -> Model{
@@ -14,5 +15,13 @@ class Factory {
     
     func createHttpClient() -> HttpClient{
         return HttpClient()
+    }
+    
+    func createServerController(webView: WKWebView, model: Model) -> ServerController{
+        return ServerController(webView: webView, model: model)
+    }
+    
+    func createNetworkErrorController(webView: WKWebView, model: Model) -> NetworkErrorController{
+        return NetworkErrorController(webView: webView, model: model)
     }
 }

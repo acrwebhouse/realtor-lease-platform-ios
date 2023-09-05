@@ -42,15 +42,7 @@ class ViewController: UIViewController , WKScriptMessageHandler  {
                     frame: CGRect(x:0, y:20, width: self.view.frame.width, height:self.view.frame.height-20),
                     configuration: config
                 )
-        
-        
-//        let request = URLRequest(url: URL(string: url)!)
-//        self.webView!.load(request)
-        
-        
         self.view.addSubview(self.webView!)
-        
-//        controlModel?.changePage(webView: webView ?? WKWebView(), page: Constants.SERVER_PAGE_NAME)
 //        controlModel?.changePage(webView: webView ?? WKWebView(), page: Constants.NETWORK_ERROR_PAGE_NAME)
         controlModel?.changePage(webView: webView ?? WKWebView(), page: Constants.SERVER_PAGE_NAME)
         

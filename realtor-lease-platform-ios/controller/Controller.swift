@@ -12,14 +12,27 @@ class Controller {
     
     var webView: WKWebView?
     var controlModel: Model
-    var urlRequest: URLRequest
     
-    init(webView: WKWebView, model: Model, urlRequest: URLRequest){
+    
+    init(webView: WKWebView, model: Model){
            self.webView = webView
            self.controlModel = model
-           self.urlRequest = urlRequest
-//           controlModel.showLoadingView(show: false)
        }
+    
+    func loadUrl(url : String){
+        let urlRequest = URLRequest(url: URL(string: url)!)
+        self.webView?.load(urlRequest)
+    }
+    
+    func loadHtmlFile(fileUrl : String){
+            if let localFilePath = Bundle.main.url(forResource: fileUrl, withExtension: Constants.HTML , subdirectory: Constants.WEB_LOCAL_DIRECTORY) {
+                self.webView?.loadFileURL(localFilePath, allowingReadAccessTo: localFilePath)
+            }else {
+                // Handle the case where the HTML file is not found
+                print("HTML file not found")
+            }
+        }
+    
     
     func scriptCallbackHandler(funcMsgDic:Dictionary<String, Any>, msg:Dictionary<String, Any>){
         print("------parent controller------")

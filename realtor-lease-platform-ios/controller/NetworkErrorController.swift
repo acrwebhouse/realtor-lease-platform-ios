@@ -9,10 +9,9 @@ import Foundation
 import WebKit
 
 class NetworkErrorController: Controller{
-    override init(webView: WKWebView, model:Model,urlRequest:URLRequest){
-            super.init(webView: webView, model: model,urlRequest:urlRequest)
-//            webView.load(urlRequest)
-//        webView.loadFileURL(urlRequest, allowingReadAccessTo: urlRequest)
+    override init(webView: WKWebView, model:Model){
+            super.init(webView: webView, model: model)
+            self.loadHtmlFile(fileUrl: Constants.NETWORK_ERROR_URL)
         }
         
     override func scriptCallbackHandler(funcMsgDic:Dictionary<String, Any>, msg:Dictionary<String, Any>){
