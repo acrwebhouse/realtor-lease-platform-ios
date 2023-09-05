@@ -35,6 +35,7 @@ class ViewController: UIViewController , WKScriptMessageHandler  {
     func initGUI() {
         
         let contentController = WKUserContentController();
+        contentController.add(self , name: Constants.IOS_PARAMETER_FOR_JAVASCRIPT)
         let config = WKWebViewConfiguration()
         config.userContentController = contentController
         config.websiteDataStore = WKWebsiteDataStore.default()
