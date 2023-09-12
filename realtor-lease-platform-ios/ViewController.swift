@@ -10,7 +10,10 @@ import WebKit
 
 class ViewController: UIViewController , WKScriptMessageHandler  {
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        
+        if message.name == Constants.JS_TO_IOS_INTERFACE, let logMessage = message.body as? String {
+                    print("JavaScript log message: \(logMessage)")
+                    // 您可以在此处执行有关日志消息的任何操作
+                }
     }
     
     
@@ -34,8 +37,11 @@ class ViewController: UIViewController , WKScriptMessageHandler  {
     
     func initGUI() {
         
+        let userScript = WKUserScript(source: JsInterface.JAVASCRIPT, injectionTime: .atDocumentStart, forMainFrameOnly: false)
+
         let contentController = WKUserContentController();
-        contentController.add(self , name: Constants.IOS_PARAMETER_FOR_JAVASCRIPT)
+        contentController.addUserScript(userScript)
+        contentController.add(self , name: Constants.JS_TO_IOS_INTERFACE)
         let config = WKWebViewConfiguration()
         config.userContentController = contentController
         config.websiteDataStore = WKWebsiteDataStore.default()

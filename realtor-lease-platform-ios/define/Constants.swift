@@ -8,11 +8,14 @@
 import Foundation
 
 class Constants {
-    public static let SERVER_URL: String = "https://matchrentdev.com/";
+//    public static let SERVER_URL: String = "https://matchrentdev.com/";
+    public static let SERVER_URL: String = "http://localhost:3000/";
+    
+
     
     //javascript
-    public static let IOS_PARAMETER_FOR_JAVASCRIPT: String = "callIosNativeApp";
-    public static let JAVASCRIPT_PARAMETER_FOR_IOS: String = "jsAppInterface";
+    public static let JS_TO_IOS_INTERFACE: String = "jsToIosInterface";
+    public static let IOS_TO_JS_INTERFACE: String = "iosToJsInterface";
     
     public static let SERVER_PAGE_NAME: String = "serverPage";
     public static let NETWORK_ERROR_PAGE_NAME: String = "networkErrorPage";

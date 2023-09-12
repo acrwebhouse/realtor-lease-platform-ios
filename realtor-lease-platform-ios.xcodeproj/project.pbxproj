@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8306E5502D19E7729F218C0F /* Pods_realtor_lease_platform_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44FB5CBA492A933E92A88DF /* Pods_realtor_lease_platform_ios.framework */; };
-		831FE1AB2AA615FE006C32FE /* Constannts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831FE1AA2AA615FE006C32FE /* Constannts.swift */; };
 		831FE1AE2AA616C6006C32FE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831FE1AD2AA616C6006C32FE /* Model.swift */; };
 		831FE1B02AA61710006C32FE /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831FE1AF2AA61710006C32FE /* Factory.swift */; };
 		831FE1B22AA6172A006C32FE /* StringProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831FE1B12AA6172A006C32FE /* StringProcess.swift */; };
@@ -25,6 +24,8 @@
 		83B71B9A284E37FB009254B9 /* realtor_lease_platform_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B71B99284E37FB009254B9 /* realtor_lease_platform_iosTests.swift */; };
 		83B71BA5284E37FB009254B9 /* realtor_lease_platform_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B71BA4284E37FB009254B9 /* realtor_lease_platform_iosUITests.swift */; };
 		83C85C5F2AA79D6E00D41E26 /* GUI in Resources */ = {isa = PBXBuildFile; fileRef = 83C85C5E2AA79D6E00D41E26 /* GUI */; };
+		83F86FC32AB0DF1C00AABBAB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F86FC22AB0DF1C00AABBAB /* Constants.swift */; };
+		83F86FC92AB0E20800AABBAB /* JsInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F86FC82AB0E20800AABBAB /* JsInterface.swift */; };
 		9648F93CEC409C82CDE7CED0 /* Pods_realtor_lease_platform_ios_realtor_lease_platform_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B87838956F688777FEF293 /* Pods_realtor_lease_platform_ios_realtor_lease_platform_iosUITests.framework */; };
 		AA87E5144935C40C2D0D6D36 /* Pods_realtor_lease_platform_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00793D2C904B0FAF1EC275CA /* Pods_realtor_lease_platform_iosTests.framework */; };
 /* End PBXBuildFile section */
@@ -50,7 +51,6 @@
 		00793D2C904B0FAF1EC275CA /* Pods_realtor_lease_platform_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_realtor_lease_platform_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0221BCFFD4F4FC712A5678B5 /* Pods-realtor-lease-platform-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-realtor-lease-platform-ios.release.xcconfig"; path = "Target Support Files/Pods-realtor-lease-platform-ios/Pods-realtor-lease-platform-ios.release.xcconfig"; sourceTree = "<group>"; };
 		5531F2E73D55771CD473B3B0 /* Pods-realtor-lease-platform-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-realtor-lease-platform-ios.debug.xcconfig"; path = "Target Support Files/Pods-realtor-lease-platform-ios/Pods-realtor-lease-platform-ios.debug.xcconfig"; sourceTree = "<group>"; };
-		831FE1AA2AA615FE006C32FE /* Constannts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constannts.swift; sourceTree = "<group>"; };
 		831FE1AD2AA616C6006C32FE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		831FE1AF2AA61710006C32FE /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		831FE1B12AA6172A006C32FE /* StringProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringProcess.swift; sourceTree = "<group>"; };
@@ -73,6 +73,8 @@
 		83B71BA4284E37FB009254B9 /* realtor_lease_platform_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = realtor_lease_platform_iosUITests.swift; sourceTree = "<group>"; };
 		83B71BA6284E37FB009254B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83C85C5E2AA79D6E00D41E26 /* GUI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GUI; sourceTree = "<group>"; };
+		83F86FC22AB0DF1C00AABBAB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		83F86FC82AB0E20800AABBAB /* JsInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsInterface.swift; sourceTree = "<group>"; };
 		85F0F800D2C0900E6FF46B9D /* Pods-realtor-lease-platform-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-realtor-lease-platform-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-realtor-lease-platform-iosTests/Pods-realtor-lease-platform-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		912AB97E08CF9B19E10AB7A0 /* Pods-realtor-lease-platform-ios-realtor-lease-platform-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-realtor-lease-platform-ios-realtor-lease-platform-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-realtor-lease-platform-ios-realtor-lease-platform-iosUITests/Pods-realtor-lease-platform-ios-realtor-lease-platform-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		93B87838956F688777FEF293 /* Pods_realtor_lease_platform_ios_realtor_lease_platform_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_realtor_lease_platform_ios_realtor_lease_platform_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,7 +124,8 @@
 		831FE1A92AA61595006C32FE /* define */ = {
 			isa = PBXGroup;
 			children = (
-				831FE1AA2AA615FE006C32FE /* Constannts.swift */,
+				83F86FC22AB0DF1C00AABBAB /* Constants.swift */,
+				83F86FC82AB0E20800AABBAB /* JsInterface.swift */,
 			);
 			path = define;
 			sourceTree = "<group>";
@@ -423,14 +426,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				831FE1B72AA621B6006C32FE /* Controller.swift in Sources */,
+				83F86FC32AB0DF1C00AABBAB /* Constants.swift in Sources */,
 				831FE1AE2AA616C6006C32FE /* Model.swift in Sources */,
 				831FE1B92AA622B8006C32FE /* ServerController.swift in Sources */,
 				83B71B87284E37F9009254B9 /* ViewController.swift in Sources */,
 				831FE1B42AA61792006C32FE /* HttpClient.swift in Sources */,
+				83F86FC92AB0E20800AABBAB /* JsInterface.swift in Sources */,
 				831FE1B02AA61710006C32FE /* Factory.swift in Sources */,
 				831FE1BD2AA62331006C32FE /* NetworkErrorController.swift in Sources */,
 				83B71B83284E37F9009254B9 /* AppDelegate.swift in Sources */,
-				831FE1AB2AA615FE006C32FE /* Constannts.swift in Sources */,
 				831FE1B22AA6172A006C32FE /* StringProcess.swift in Sources */,
 				83B71B85284E37F9009254B9 /* SceneDelegate.swift in Sources */,
 			);

@@ -10,6 +10,6 @@ import Foundation
 class StringProcess {
     
     static func getEvaluateJavaScriptString(funcName:String, jsonString:String) -> String{
-        return Constants.JAVASCRIPT_PARAMETER_FOR_IOS+".\(funcName)('\(jsonString)')"
+        return Constants.JS_TO_IOS_INTERFACE+".\(funcName)('\(jsonString)')"
     }
 }
