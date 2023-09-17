@@ -22,6 +22,7 @@ class Constants {
     
     //commandName
     public static let LOAD_URL_COMMAND: String  = "loadUrl";
+    public static let BACK_PAGE_COMMAND: String  = "backPage"
     
     //util
     public static let WEB_LOCAL_DIRECTORY: String = "GUI/views";

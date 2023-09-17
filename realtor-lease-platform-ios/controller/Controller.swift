@@ -38,6 +38,12 @@ class Controller {
         print("executeCmd args: \(args)")
     }
     
+    func backPage(){
+        if ((webView?.canGoBack) != nil) {
+            webView?.goBack()
+        }
+    }
+    
     func scriptCallbackHandler(funcMsgDic:Dictionary<String, Any>, msg:Dictionary<String, Any>){
         print("------parent controller------")
     }

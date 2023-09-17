@@ -32,6 +32,11 @@ class JsInterface {
                 window.webkit.messageHandlers.\(Constants.JS_TO_IOS_INTERFACE).postMessage(getExeFuncMessage("showInternelErrorPageForMobile",""));
             }
             
+            function backPage() {
+                const args = {}
+                window.webkit.messageHandlers.\(Constants.JS_TO_IOS_INTERFACE).postMessage(getExeFuncMessage("backPage",args));
+            }
+            
             function getExeFuncMessage(name,args){
                 const result = {
                     name,
@@ -44,6 +49,7 @@ class JsInterface {
             \(Constants.JS_TO_IOS_INTERFACE).callNative = callNative
             \(Constants.JS_TO_IOS_INTERFACE).loadUrl = loadUrl
             \(Constants.JS_TO_IOS_INTERFACE).showInternelErrorPageForMobile = showInternelErrorPageForMobile
+            \(Constants.JS_TO_IOS_INTERFACE).backPage = backPage
             
             """
     

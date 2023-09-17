@@ -26,6 +26,9 @@ class ServerController: Controller{
             let serverUrl = StringProcess.getServerUrl(localUrl: url as! String)
             self.loadUrl(url: serverUrl)
             break;
+        case Constants.BACK_PAGE_COMMAND:
+            self.backPage()
+            break;
         default:
             break;
         }
