@@ -44,6 +44,10 @@ class Controller {
         }
     }
     
+    func showInternelErrorPage(){
+        controlModel.changePage(webView: webView ?? WKWebView(), page: Constants.NETWORK_ERROR_PAGE_NAME)
+    }
+    
     func scriptCallbackHandler(funcMsgDic:Dictionary<String, Any>, msg:Dictionary<String, Any>){
         print("------parent controller------")
     }

@@ -29,6 +29,9 @@ class ServerController: Controller{
         case Constants.BACK_PAGE_COMMAND:
             self.backPage()
             break;
+        case Constants.SHOW_INTERNEL_ERROR_PAGE_COMMAND:
+            showInternelErrorPage()
+            break;
         default:
             break;
         }

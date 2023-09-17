@@ -37,6 +37,16 @@ class JsInterface {
                 window.webkit.messageHandlers.\(Constants.JS_TO_IOS_INTERFACE).postMessage(getExeFuncMessage("backPage",args));
             }
             
+            function showInternelErrorPage() {
+                const args = {}
+                window.webkit.messageHandlers.\(Constants.JS_TO_IOS_INTERFACE).postMessage(getExeFuncMessage("showInternelErrorPage",args));
+            }
+            
+            function restartApp() {
+                const args = {}
+                window.webkit.messageHandlers.\(Constants.JS_TO_IOS_INTERFACE).postMessage(getExeFuncMessage("restartApp",args));
+            }
+            
             function getExeFuncMessage(name,args){
                 const result = {
                     name,
@@ -50,6 +60,8 @@ class JsInterface {
             \(Constants.JS_TO_IOS_INTERFACE).loadUrl = loadUrl
             \(Constants.JS_TO_IOS_INTERFACE).showInternelErrorPageForMobile = showInternelErrorPageForMobile
             \(Constants.JS_TO_IOS_INTERFACE).backPage = backPage
+            \(Constants.JS_TO_IOS_INTERFACE).showInternelErrorPage = showInternelErrorPage
+            \(Constants.JS_TO_IOS_INTERFACE).restartApp = restartApp
             
             """
     

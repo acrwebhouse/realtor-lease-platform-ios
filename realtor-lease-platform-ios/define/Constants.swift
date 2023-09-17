@@ -8,8 +8,8 @@
 import Foundation
 
 class Constants {
-//    public static let SERVER_URL: String = "https://matchrentdev.com";
-    public static let SERVER_URL: String = "http://localhost:3000";
+    public static let SERVER_URL: String = "https://matchrentdev.com";
+    //public static let SERVER_URL: String = "http://localhost:3000";
     
 
     
@@ -23,6 +23,8 @@ class Constants {
     //commandName
     public static let LOAD_URL_COMMAND: String  = "loadUrl";
     public static let BACK_PAGE_COMMAND: String  = "backPage"
+    public static let SHOW_INTERNEL_ERROR_PAGE_COMMAND: String  = "showInternelErrorPage"
+    public static let RESTART_APP_COMMAND: String  = "restartApp"
     
     //util
     public static let WEB_LOCAL_DIRECTORY: String = "GUI/views";

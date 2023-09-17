@@ -8,7 +8,7 @@
 import UIKit
 import WebKit
 
-class ViewController: UIViewController , WKScriptMessageHandler  {
+class ViewController: UIViewController , WKScriptMessageHandler , WKNavigationDelegate {
     let url = Constants.SERVER_URL
     var factory : Factory? = nil
     var webView: WKWebView? = nil
@@ -57,14 +57,27 @@ class ViewController: UIViewController , WKScriptMessageHandler  {
         let config = WKWebViewConfiguration()
         config.userContentController = contentController
         config.websiteDataStore = WKWebsiteDataStore.default()
+        
         self.webView = WKWebView(
                     frame: CGRect(x:0, y:20, width: self.view.frame.width, height:self.view.frame.height-20),
                     configuration: config
                 )
+        self.webView!.navigationDelegate = self
+        // 禁止缩放手势
+        self.webView!.scrollView.bouncesZoom = true
         self.view.addSubview(self.webView!)
-//        controlModel?.changePage(webView: webView ?? WKWebView(), page: Constants.NETWORK_ERROR_PAGE_NAME)
-        controlModel?.changePage(webView: webView ?? WKWebView(), page: Constants.SERVER_PAGE_NAME)
+        controlModel?.changePage(webView: webView ?? WKWebView(), page: Constants.NETWORK_ERROR_PAGE_NAME)
+//        controlModel?.changePage(webView: webView ?? WKWebView(), page: Constants.SERVER_PAGE_NAME)
         
+    }
+    
+    // WKNavigationDelegate 方法，用于捕捉加载错误
+    func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+        controlModel?.changePage(webView: webView ?? WKWebView(), page: Constants.NETWORK_ERROR_PAGE_NAME)
+    }
+    
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return nil
     }
 
 }
