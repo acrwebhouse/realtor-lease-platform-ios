@@ -9,18 +9,30 @@ import UIKit
 import WebKit
 
 class ViewController: UIViewController , WKScriptMessageHandler  {
-    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        if message.name == Constants.JS_TO_IOS_INTERFACE, let logMessage = message.body as? String {
-                    print("JavaScript log message: \(logMessage)")
-                    // 您可以在此处执行有关日志消息的任何操作
-                }
-    }
-    
-    
     let url = Constants.SERVER_URL
     var factory : Factory? = nil
     var webView: WKWebView? = nil
     var controlModel: Model? = nil
+    
+    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        if message.name == Constants.JS_TO_IOS_INTERFACE, let jsMessage = message.body as? String {
+                    print("JavaScript message: \(jsMessage)")
+            do {
+                
+                let commandDic = StringProcess.convertToDictionary(text: jsMessage)
+                if commandDic?.count ?? 0 > 0 {
+                    let name = commandDic?[Constants.NAME] as! String
+                    let args = commandDic?[Constants.ARGS] as! [String : Any]
+                    let controller = controlModel?.getController()
+                    controller?.executeCmd(name: name, args:args)
+                }
+            } catch {
+            }
+        }
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initObject()

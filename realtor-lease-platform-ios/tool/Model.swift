@@ -23,7 +23,11 @@ class Model: NSObject {
     {
         self.factory = factory;
     }
-    
+   
+    func getController()-> Controller{
+        return self.controller!
+    }
+   
     func changePage(webView: WKWebView, page:String) 
     {
         print("change page to : \(page)");

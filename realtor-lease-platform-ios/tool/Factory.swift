@@ -17,6 +17,10 @@ class Factory {
         return HttpClient()
     }
     
+    func createController(webView: WKWebView, model: Model) -> Controller{
+        return Controller(webView: webView, model: model)
+    }
+    
     func createServerController(webView: WKWebView, model: Model) -> ServerController{
         return ServerController(webView: webView, model: model)
     }

@@ -33,6 +33,10 @@ class Controller {
             }
         }
     
+    func executeCmd(name : String, args : [String: Any]){
+        print("executeCmd name: \(name)")
+        print("executeCmd args: \(args)")
+    }
     
     func scriptCallbackHandler(funcMsgDic:Dictionary<String, Any>, msg:Dictionary<String, Any>){
         print("------parent controller------")
