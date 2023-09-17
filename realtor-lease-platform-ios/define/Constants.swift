@@ -8,8 +8,8 @@
 import Foundation
 
 class Constants {
-    public static let SERVER_URL: String = "https://matchrentdev.com";
-    //public static let SERVER_URL: String = "http://localhost:3000";
+//    public static let SERVER_URL: String = "https://matchrentdev.com";
+    public static let SERVER_URL: String = "http://localhost:3000";
     
 
     
@@ -32,4 +32,5 @@ class Constants {
     public static let NAME: String  = "name";
     public static let ARGS: String  = "args";
     public static let URL: String  = "url";
+    public static let MAIN: String  = "Main";
 }

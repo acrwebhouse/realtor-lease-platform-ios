@@ -66,8 +66,8 @@ class ViewController: UIViewController , WKScriptMessageHandler , WKNavigationDe
         // 禁止缩放手势
         self.webView!.scrollView.bouncesZoom = true
         self.view.addSubview(self.webView!)
-        controlModel?.changePage(webView: webView ?? WKWebView(), page: Constants.NETWORK_ERROR_PAGE_NAME)
-//        controlModel?.changePage(webView: webView ?? WKWebView(), page: Constants.SERVER_PAGE_NAME)
+//        controlModel?.changePage(webView: webView ?? WKWebView(), page: Constants.NETWORK_ERROR_PAGE_NAME)
+        controlModel?.changePage(webView: webView ?? WKWebView(), page: Constants.SERVER_PAGE_NAME)
         
     }
     

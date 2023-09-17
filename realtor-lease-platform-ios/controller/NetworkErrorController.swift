@@ -27,7 +27,11 @@ class NetworkErrorController: Controller{
     }
     
     func restartApp(){
-        print("=========restartApp========")
+        guard let window = UIApplication.shared.windows.first else { return }
+        let storyboard = UIStoryboard(name: Constants.MAIN, bundle: nil)
+        let rootViewController = storyboard.instantiateInitialViewController()
+        window.rootViewController = rootViewController
+        window.makeKeyAndVisible()
     }
     
     override func scriptCallbackHandler(funcMsgDic:Dictionary<String, Any>, msg:Dictionary<String, Any>){
