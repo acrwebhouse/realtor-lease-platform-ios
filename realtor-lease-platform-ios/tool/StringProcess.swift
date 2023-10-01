@@ -32,4 +32,7 @@ class StringProcess {
         return Constants.SERVER_URL + localUrl
     }
     
+    static func getCallUpPhoneNumber(phoneNumber: String) -> String {
+        return "tel://\(phoneNumber)"
+    }
 }

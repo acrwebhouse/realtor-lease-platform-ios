@@ -47,6 +47,13 @@ class JsInterface {
                 window.webkit.messageHandlers.\(Constants.JS_TO_IOS_INTERFACE).postMessage(getExeFuncMessage("restartApp",args));
             }
             
+            function callUp(phoneNumber) {
+                const args = {
+                    phoneNumber
+                }
+                window.webkit.messageHandlers.\(Constants.JS_TO_IOS_INTERFACE).postMessage(getExeFuncMessage("callUp",args));
+            }
+            
             function getExeFuncMessage(name,args){
                 const result = {
                     name,
@@ -62,6 +69,7 @@ class JsInterface {
             \(Constants.JS_TO_IOS_INTERFACE).backPage = backPage
             \(Constants.JS_TO_IOS_INTERFACE).showInternelErrorPage = showInternelErrorPage
             \(Constants.JS_TO_IOS_INTERFACE).restartApp = restartApp
+            \(Constants.JS_TO_IOS_INTERFACE).callUp = callUp
             
             """
     

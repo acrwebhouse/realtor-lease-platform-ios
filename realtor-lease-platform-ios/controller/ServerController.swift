@@ -32,8 +32,22 @@ class ServerController: Controller{
         case Constants.SHOW_INTERNEL_ERROR_PAGE_COMMAND:
             showInternelErrorPage()
             break;
+        case Constants.CALL_UP_COMMAND:
+            let phoneNumber = args[Constants.PHONE_NUMBER] as! String
+            callUp(phoneNumber: phoneNumber)
+            break;
         default:
             break;
+        }
+    }
+    
+    func callUp(phoneNumber : String){
+        if let phoneURL = URL(string: StringProcess.getCallUpPhoneNumber(phoneNumber: phoneNumber)) {
+            if UIApplication.shared.canOpenURL(phoneURL) {
+                UIApplication.shared.open(phoneURL, options: [:], completionHandler: nil)
+            } else {
+                print("無法打電話 \(phoneNumber)")
+            }
         }
     }
     
