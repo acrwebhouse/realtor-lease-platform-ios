@@ -54,6 +54,13 @@ class JsInterface {
                 window.webkit.messageHandlers.\(Constants.JS_TO_IOS_INTERFACE).postMessage(getExeFuncMessage("callUp",args));
             }
             
+            function addLineFriend(lineId) {
+                const args = {
+                    lineId
+                }
+                window.webkit.messageHandlers.\(Constants.JS_TO_IOS_INTERFACE).postMessage(getExeFuncMessage("addLineFriend",args));
+            }
+            
             function getExeFuncMessage(name,args){
                 const result = {
                     name,
@@ -70,6 +77,7 @@ class JsInterface {
             \(Constants.JS_TO_IOS_INTERFACE).showInternelErrorPage = showInternelErrorPage
             \(Constants.JS_TO_IOS_INTERFACE).restartApp = restartApp
             \(Constants.JS_TO_IOS_INTERFACE).callUp = callUp
+            \(Constants.JS_TO_IOS_INTERFACE).addLineFriend = addLineFriend
             
             """
     

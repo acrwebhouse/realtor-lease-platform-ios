@@ -36,6 +36,10 @@ class ServerController: Controller{
             let phoneNumber = args[Constants.PHONE_NUMBER] as! String
             callUp(phoneNumber: phoneNumber)
             break;
+        case Constants.ADD_LIN_FRIEND_COMMAND: //不 work
+            let lineId = args[Constants.LINE_ID] as! String
+            addLineFriend(lineId : lineId)
+            break;
         default:
             break;
         }
@@ -48,6 +52,16 @@ class ServerController: Controller{
             } else {
                 print("無法打電話 \(phoneNumber)")
             }
+        }
+    }
+    
+    func addLineFriend(lineId : String) {
+        let lineURL = URL(string: StringProcess.getAddLineFriendLineId(lineId: lineId))!
+        print("====lineURL======\(lineURL)===")
+        if UIApplication.shared.canOpenURL(lineURL) {
+            UIApplication.shared.open(lineURL, options: [:], completionHandler: nil)
+        } else {
+            print("無法打開 line \(lineId)")
         }
     }
     

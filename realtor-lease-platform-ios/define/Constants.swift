@@ -26,6 +26,7 @@ class Constants {
     public static let SHOW_INTERNEL_ERROR_PAGE_COMMAND: String  = "showInternelErrorPage"
     public static let RESTART_APP_COMMAND: String  = "restartApp"
     public static let CALL_UP_COMMAND: String  = "callUp"
+    public static let ADD_LIN_FRIEND_COMMAND: String  = "addLineFriend"
     
     //util
     public static let WEB_LOCAL_DIRECTORY: String = "GUI/views";
@@ -35,4 +36,5 @@ class Constants {
     public static let URL: String  = "url";
     public static let MAIN: String  = "Main";
     public static let PHONE_NUMBER: String  = "phoneNumber";
+    public static let LINE_ID: String  = "lineId";
 }

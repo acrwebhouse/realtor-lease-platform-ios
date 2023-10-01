@@ -35,4 +35,8 @@ class StringProcess {
     static func getCallUpPhoneNumber(phoneNumber: String) -> String {
         return "tel://\(phoneNumber)"
     }
+    
+    static func getAddLineFriendLineId(lineId: String) -> String {
+        return "line://ti/p/@\(lineId)"
+    }
 }
