@@ -37,6 +37,6 @@ class StringProcess {
     }
     
     static func getAddLineFriendLineId(lineId: String) -> String {
-        return "line://ti/p/@\(lineId)"
+        return "line://ti/p/~\(lineId)"
     }
 }

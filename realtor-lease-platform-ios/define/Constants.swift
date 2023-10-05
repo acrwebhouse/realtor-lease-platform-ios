@@ -37,4 +37,5 @@ class Constants {
     public static let MAIN: String  = "Main";
     public static let PHONE_NUMBER: String  = "phoneNumber";
     public static let LINE_ID: String  = "lineId";
+    public static let LINE_APP_STORE_ADDRESS: String  = "itms-apps://itunes.apple.com/app/id443904275"
 }

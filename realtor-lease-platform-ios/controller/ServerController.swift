@@ -57,12 +57,14 @@ class ServerController: Controller{
     
     func addLineFriend(lineId : String) {
         let lineURL = URL(string: StringProcess.getAddLineFriendLineId(lineId: lineId))!
-        print("====lineURL======\(lineURL)===")
         if UIApplication.shared.canOpenURL(lineURL) {
             UIApplication.shared.open(lineURL, options: [:], completionHandler: nil)
         } else {
-            print("無法打開 line \(lineId)")
+           // 若沒安裝 Line 則導到 App Store(id443904275 為 Line App 的 ID)
+            let lineURL = URL(string: Constants.LINE_APP_STORE_ADDRESS)!
+            UIApplication.shared.open(lineURL, options: [:], completionHandler: nil)
         }
+       
     }
     
 }
