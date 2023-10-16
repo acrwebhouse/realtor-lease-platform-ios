@@ -27,6 +27,9 @@ class Constants {
     public static let RESTART_APP_COMMAND: String  = "restartApp"
     public static let CALL_UP_COMMAND: String  = "callUp"
     public static let ADD_LIN_FRIEND_COMMAND: String  = "addLineFriend"
+    public static let SET_ACCOUNT_PASSWORD_COMMAND: String  = "setAccountPassword"
+    public static let SAVE_USER_INFO_COMMAND: String  = "saveUserInfo"
+    
     
     //util
     public static let WEB_LOCAL_DIRECTORY: String = "GUI/views";

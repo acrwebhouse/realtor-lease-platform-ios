@@ -36,9 +36,16 @@ class ServerController: Controller{
             let phoneNumber = args[Constants.PHONE_NUMBER] as! String
             callUp(phoneNumber: phoneNumber)
             break;
-        case Constants.ADD_LIN_FRIEND_COMMAND: //不 work
+        case Constants.ADD_LIN_FRIEND_COMMAND:
             let lineId = args[Constants.LINE_ID] as! String
             addLineFriend(lineId : lineId)
+            break;
+        case Constants.SET_ACCOUNT_PASSWORD_COMMAND:
+            print("=====SET_ACCOUNT_PASSWORD_COMMAND=====")
+            controlModel.setDefaultAccountPassword(account: "account",password: "password")
+            break;
+        case Constants.SAVE_USER_INFO_COMMAND:
+            print("=====SAVE_USER_INFO_COMMAND=====")
             break;
         default:
             break;

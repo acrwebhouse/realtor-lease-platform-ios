@@ -39,4 +39,9 @@ class StringProcess {
     static func getAddLineFriendLineId(lineId: String) -> String {
         return "line://ti/p/~\(lineId)"
     }
+    
+    static func getSetDefaultAccountPasswordJsFunc(account: String,password: String) -> String {
+        return "setDefaultAccountPassword(\"\(account)\",\"\(password)\")"
+    }
+    
 }

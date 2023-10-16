@@ -43,4 +43,10 @@ class Model: NSObject {
         }
         
     }
+    
+    func setDefaultAccountPassword(account : String,password : String)
+    {
+        let setDefaultAccountPasswordJsFunc = StringProcess.getSetDefaultAccountPasswordJsFunc(account: account,password: password)
+        webView?.evaluateJavaScript(setDefaultAccountPasswordJsFunc)
+    }
 }

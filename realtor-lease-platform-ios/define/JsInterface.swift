@@ -70,6 +70,20 @@ class JsInterface {
             
             }
             
+            function saveUserInfo(accountOrMail,password,userId) {
+                const args = {
+                        accountOrMail,
+                        password,
+                        userId
+                }
+                window.webkit.messageHandlers.\(Constants.JS_TO_IOS_INTERFACE).postMessage(getExeFuncMessage("saveUserInfo",args));
+            }
+            
+            function setAccountPassword() {
+                const args = {}
+                window.webkit.messageHandlers.\(Constants.JS_TO_IOS_INTERFACE).postMessage(getExeFuncMessage("setAccountPassword",args));
+            }
+            
             \(Constants.JS_TO_IOS_INTERFACE).callNative = callNative
             \(Constants.JS_TO_IOS_INTERFACE).loadUrl = loadUrl
             \(Constants.JS_TO_IOS_INTERFACE).showInternelErrorPageForMobile = showInternelErrorPageForMobile
@@ -78,6 +92,8 @@ class JsInterface {
             \(Constants.JS_TO_IOS_INTERFACE).restartApp = restartApp
             \(Constants.JS_TO_IOS_INTERFACE).callUp = callUp
             \(Constants.JS_TO_IOS_INTERFACE).addLineFriend = addLineFriend
+            \(Constants.JS_TO_IOS_INTERFACE).saveUserInfo = saveUserInfo
+            \(Constants.JS_TO_IOS_INTERFACE).setAccountPassword = setAccountPassword
             
             """
     
