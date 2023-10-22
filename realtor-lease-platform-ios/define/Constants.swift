@@ -32,6 +32,13 @@ class Constants {
     
     //db
     public static let DATABASE_NAME: String  = "ACRDB.db";
+    public static let ID_SQL : String = "id";
+    public static let TABLE_CONFIG_SQL : String = "Config";
+    public static let CONFIG_FIREBASE_TOKEN_SQL : String = "firebaseToken";
+    public static let CONFIG_NOTIFICATION_ID_SQL : String = "notificationId";
+    public static let CONFIG_ACCOUNT_SQL : String = "account";
+    public static let CONFIG_PASSWORD_SQL : String = "password";
+    public static let CONFIG_USER_ID_SQL : String = "userId";
     
     //util
     public static let WEB_LOCAL_DIRECTORY: String = "GUI/views";
