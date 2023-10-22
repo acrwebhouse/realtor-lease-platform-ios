@@ -28,4 +28,9 @@ class Factory {
     func createNetworkErrorController(webView: WKWebView, model: Model) -> NetworkErrorController{
         return NetworkErrorController(webView: webView, model: model)
     }
+    
+    func createDBConnection() -> DBConnection{
+        return DBConnection()
+    }
+    
 }

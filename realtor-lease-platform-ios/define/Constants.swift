@@ -30,6 +30,8 @@ class Constants {
     public static let SET_ACCOUNT_PASSWORD_COMMAND: String  = "setAccountPassword"
     public static let SAVE_USER_INFO_COMMAND: String  = "saveUserInfo"
     
+    //db
+    public static let DATABASE_NAME: String  = "ACRDB.db";
     
     //util
     public static let WEB_LOCAL_DIRECTORY: String = "GUI/views";

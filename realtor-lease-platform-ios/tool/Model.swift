@@ -13,6 +13,7 @@ class Model: NSObject {
     var webView: WKWebView? = nil
     var viewController :UIViewController? = nil
     var factory : Factory? = nil
+    var dbHelper : DBConnection? = nil
     
     func setViewController(ViewController:UIViewController)
     {
@@ -27,7 +28,12 @@ class Model: NSObject {
     func getController()-> Controller{
         return self.controller!
     }
-   
+    
+    func connectDB(){
+        print("======connectDB=========")
+        dbHelper = self.factory?.createDBConnection()
+    }
+    
     func changePage(webView: WKWebView, page:String) 
     {
         print("change page to : \(page)");

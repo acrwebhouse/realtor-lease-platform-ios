@@ -4,6 +4,7 @@
 target 'realtor-lease-platform-ios' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+  pod 'SQLite.swift', '~> 0.14.0'
 
   # Pods for realtor-lease-platform-ios
 

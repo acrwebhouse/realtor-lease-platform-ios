@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		831FE1B72AA621B6006C32FE /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831FE1B62AA621B6006C32FE /* Controller.swift */; };
 		831FE1B92AA622B8006C32FE /* ServerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831FE1B82AA622B8006C32FE /* ServerController.swift */; };
 		831FE1BD2AA62331006C32FE /* NetworkErrorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831FE1BC2AA62331006C32FE /* NetworkErrorController.swift */; };
+		833D4F0D2AE56DD200ED0591 /* DBConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833D4F0C2AE56DD200ED0591 /* DBConnection.swift */; };
 		83B71B83284E37F9009254B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B71B82284E37F9009254B9 /* AppDelegate.swift */; };
 		83B71B85284E37F9009254B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B71B84284E37F9009254B9 /* SceneDelegate.swift */; };
 		83B71B87284E37F9009254B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B71B86284E37F9009254B9 /* ViewController.swift */; };
@@ -58,6 +59,7 @@
 		831FE1B62AA621B6006C32FE /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		831FE1B82AA622B8006C32FE /* ServerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerController.swift; sourceTree = "<group>"; };
 		831FE1BC2AA62331006C32FE /* NetworkErrorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorController.swift; sourceTree = "<group>"; };
+		833D4F0C2AE56DD200ED0591 /* DBConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBConnection.swift; sourceTree = "<group>"; };
 		83B71B7F284E37F9009254B9 /* realtor-lease-platform-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "realtor-lease-platform-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B71B82284E37F9009254B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83B71B84284E37F9009254B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				831FE1AF2AA61710006C32FE /* Factory.swift */,
 				831FE1B12AA6172A006C32FE /* StringProcess.swift */,
 				831FE1B32AA61792006C32FE /* HttpClient.swift */,
+				833D4F0C2AE56DD200ED0591 /* DBConnection.swift */,
 			);
 			path = tool;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				83B71B7B284E37F9009254B9 /* Sources */,
 				83B71B7C284E37F9009254B9 /* Frameworks */,
 				83B71B7D284E37F9009254B9 /* Resources */,
+				42D2E9A6E815B835E3D7DEC2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -270,6 +274,7 @@
 				83B71B9C284E37FB009254B9 /* Sources */,
 				83B71B9D284E37FB009254B9 /* Frameworks */,
 				83B71B9E284E37FB009254B9 /* Resources */,
+				459F139755AC41FCC4E3BD81 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -374,6 +379,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		42D2E9A6E815B835E3D7DEC2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-realtor-lease-platform-ios/Pods-realtor-lease-platform-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-realtor-lease-platform-ios/Pods-realtor-lease-platform-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-realtor-lease-platform-ios/Pods-realtor-lease-platform-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		459F139755AC41FCC4E3BD81 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-realtor-lease-platform-ios-realtor-lease-platform-iosUITests/Pods-realtor-lease-platform-ios-realtor-lease-platform-iosUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-realtor-lease-platform-ios-realtor-lease-platform-iosUITests/Pods-realtor-lease-platform-ios-realtor-lease-platform-iosUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-realtor-lease-platform-ios-realtor-lease-platform-iosUITests/Pods-realtor-lease-platform-ios-realtor-lease-platform-iosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6EF057A62B0C2B7F348CA1BA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -428,6 +467,7 @@
 				831FE1B72AA621B6006C32FE /* Controller.swift in Sources */,
 				83F86FC32AB0DF1C00AABBAB /* Constants.swift in Sources */,
 				831FE1AE2AA616C6006C32FE /* Model.swift in Sources */,
+				833D4F0D2AE56DD200ED0591 /* DBConnection.swift in Sources */,
 				831FE1B92AA622B8006C32FE /* ServerController.swift in Sources */,
 				83B71B87284E37F9009254B9 /* ViewController.swift in Sources */,
 				831FE1B42AA61792006C32FE /* HttpClient.swift in Sources */,
