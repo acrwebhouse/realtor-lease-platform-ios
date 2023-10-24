@@ -30,7 +30,6 @@ class Model: NSObject {
     }
     
     func connectDB(){
-        print("======connectDB=========")
         dbHelper = self.factory?.createDBConnection()
     }
     
@@ -40,6 +39,22 @@ class Model: NSObject {
             result = dbHelper?.getConfig()
         }
         return result ?? Config();
+    }
+    
+    func saveUserInfo(account : String , password : String , userId : String ){
+        if (dbHelper?.isConfigExist() == true) {
+            let config = getConfig()
+            config.setAttribute(type: 3, attribute: account)
+            config.setAttribute(type: 4, attribute: password)
+            config.setAttribute(type: 5, attribute: userId)
+            dbHelper?.updateConfig(data: config)
+        }else{
+            let config = factory?.createConfig()
+            config?.setAttribute(type: 3, attribute: account)
+            config?.setAttribute(type: 4, attribute: password)
+            config?.setAttribute(type: 5, attribute: userId)
+            dbHelper?.insertConfig(data: config!)
+        }
     }
     
     func changePage(webView: WKWebView, page:String) 

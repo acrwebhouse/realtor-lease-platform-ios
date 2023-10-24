@@ -51,4 +51,8 @@ class Constants {
     public static let LINE_ID: String  = "lineId";
     public static let LINE_APP_STORE_ADDRESS: String  = "itms-apps://itunes.apple.com/app/id443904275"
     public static let EMPTY_STRING : String  = "";
+    public static let PASSWORD: String  = "password";
+    public static let ACCOUNT_OR_MAIL: String  = "accountOrMail";
+    public static let USER_ID: String  = "userId";
+    
 }

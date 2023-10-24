@@ -16,7 +16,7 @@ class ViewController: UIViewController , WKScriptMessageHandler , WKNavigationDe
     
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         if message.name == Constants.JS_TO_IOS_INTERFACE, let jsMessage = message.body as? String {
-                    print("JavaScript message: \(jsMessage)")
+                    //print("JavaScript message: \(jsMessage)")
             do {
                 
                 let commandDic = StringProcess.convertToDictionary(text: jsMessage)
