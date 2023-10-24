@@ -34,6 +34,14 @@ class Model: NSObject {
         dbHelper = self.factory?.createDBConnection()
     }
     
+    func getConfig() -> Config{
+        var result = factory?.createConfig()
+        if (dbHelper?.isConfigExist() == true) {
+            result = dbHelper?.getConfig()
+        }
+        return result ?? Config();
+    }
+    
     func changePage(webView: WKWebView, page:String) 
     {
         print("change page to : \(page)");

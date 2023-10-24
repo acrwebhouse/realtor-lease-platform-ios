@@ -29,6 +29,14 @@ class Factory {
         return NetworkErrorController(webView: webView, model: model)
     }
     
+    func createConfig() -> Config{
+        return Config()
+    }
+    
+    func createConfig(firebaseToken : String ,account : String ,password : String ,notificationId : String ,userId :String ) -> Config{
+        return Config(firebaseToken : firebaseToken ,account : account ,password : password ,notificationId : notificationId ,userId :userId )
+    }
+    
     func createDBConnection() -> DBConnection{
         return DBConnection()
     }

@@ -41,8 +41,8 @@ class ServerController: Controller{
             addLineFriend(lineId : lineId)
             break;
         case Constants.SET_ACCOUNT_PASSWORD_COMMAND:
-            print("=====SET_ACCOUNT_PASSWORD_COMMAND=====")
-            controlModel.setDefaultAccountPassword(account: "account",password: "password")
+            let config = controlModel.getConfig()
+            controlModel.setDefaultAccountPassword(account: config.getAccount(),password: config.getPassword())
             break;
         case Constants.SAVE_USER_INFO_COMMAND:
             print("=====SAVE_USER_INFO_COMMAND=====")

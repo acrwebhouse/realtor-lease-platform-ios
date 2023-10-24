@@ -10,16 +10,18 @@ import SQLite
 
 class DBConnection {
     var db : Connection? = nil
+    let config = Table(Constants.TABLE_CONFIG_SQL)
+    let factory = Factory()
      init(){
         print("DBConnection init")
          if let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
              let dbPath = documentDirectory.appendingPathComponent(Constants.DATABASE_NAME)
              // 使用 'dbPath' 作為數據庫路徑
-             print("====dbPath==\(dbPath)======")
              do {
+                 
                  db = try Connection("\(dbPath)")
-//                 db = try Connection("path_to_your_database.db")
-                 // 在這裡你可以使用 'db' 來執行數據庫操作
+                 createTable()
+                 //insert()
              } catch {
                  print(error)
              }
@@ -27,7 +29,6 @@ class DBConnection {
     }
     
     func createTable(){
-        let config = Table(Constants.TABLE_CONFIG_SQL)
         let id = Expression<Int>(Constants.ID_SQL)
         let firebaseToken = Expression<String>(Constants.CONFIG_FIREBASE_TOKEN_SQL)
         let notificationId = Expression<String>(Constants.CONFIG_NOTIFICATION_ID_SQL)
@@ -48,21 +49,108 @@ class DBConnection {
         }
     }
     
-    func listTable(){
-//        let config = Table(Constants.TABLE_CONFIG_SQL)
-//        let id = Expression<Int>(Constants.ID_SQL)
-//        let firebaseToken = Expression<String>(Constants.CONFIG_FIREBASE_TOKEN_SQL)
-//        let notificationId = Expression<String>(Constants.CONFIG_NOTIFICATION_ID_SQL)
-//        let account = Expression<String>(Constants.CONFIG_ACCOUNT_SQL)
-//        let password = Expression<String>(Constants.CONFIG_PASSWORD_SQL)
-//        let userId = Expression<String>(Constants.CONFIG_USER_ID_SQL)
-//        do {
-//            for item in try db?.prepare(config) {
-//                print("config id: \(item[id]), account: \(item[account]), password: \(item[password])")
-//            }
-//        } catch {
-//            print(error)
-//        }
+    func insert(){
+        let firebaseToken = Expression<String>(Constants.CONFIG_FIREBASE_TOKEN_SQL)
+        let notificationId = Expression<String>(Constants.CONFIG_NOTIFICATION_ID_SQL)
+        let account = Expression<String>(Constants.CONFIG_ACCOUNT_SQL)
+        let password = Expression<String>(Constants.CONFIG_PASSWORD_SQL)
+        let userId = Expression<String>(Constants.CONFIG_USER_ID_SQL)
+        do {
+            try db?.run(config.insert(
+//                firebaseToken <- Constants.EMPTY_STRING ,
+//                notificationId <- Constants.EMPTY_STRING ,
+//                account <- Constants.EMPTY_STRING ,
+//                password <- Constants.EMPTY_STRING ,
+//                userId <- Constants.EMPTY_STRING
+                firebaseToken <- "firebaseToken" ,
+                notificationId <- "notificationId" ,
+                account <- "123" ,
+                password <- "456" ,
+                userId <- "789"
+            ))
+        }
+        catch {
+            print(error)
+        }
+        
+    }
+    
+    func insertConfig(data:Config) {
+        let firebaseToken = Expression<String>(Constants.CONFIG_FIREBASE_TOKEN_SQL)
+        let notificationId = Expression<String>(Constants.CONFIG_NOTIFICATION_ID_SQL)
+        let account = Expression<String>(Constants.CONFIG_ACCOUNT_SQL)
+        let password = Expression<String>(Constants.CONFIG_PASSWORD_SQL)
+        let userId = Expression<String>(Constants.CONFIG_USER_ID_SQL)
+        do {
+            try db?.run(config.insert(
+                firebaseToken <- "\(data.getFirebaseToken())" ,
+                notificationId <- "\(data.getNotificationId())" ,
+                account <- "\(data.getAccount())" ,
+                password <- "\(data.getPassword())" ,
+                userId <- "\(data.getUserId())"
+            ))
+        }
+        catch {
+            print(error)
+        }
+    }
+    
+    func updateConfig(data:Config) {
+        let id = Expression<Int>(Constants.ID_SQL)
+        let firebaseToken = Expression<String>(Constants.CONFIG_FIREBASE_TOKEN_SQL)
+        let notificationId = Expression<String>(Constants.CONFIG_NOTIFICATION_ID_SQL)
+        let account = Expression<String>(Constants.CONFIG_ACCOUNT_SQL)
+        let password = Expression<String>(Constants.CONFIG_PASSWORD_SQL)
+        let userId = Expression<String>(Constants.CONFIG_USER_ID_SQL)
+        do {
+            try db?.run(config.update(
+                id <- data.getId() ,
+                firebaseToken <- "\(data.getFirebaseToken())" ,
+                notificationId <- "\(data.getNotificationId())" ,
+                account <- "\(data.getAccount())" ,
+                password <- "\(data.getPassword())" ,
+                userId <- "\(data.getUserId())"
+            ))
+        }
+        catch {
+            print(error)
+        }
+    }
+    
+    func getConfig() -> Config {
+        let id = Expression<Int>(Constants.ID_SQL)
+        let firebaseToken = Expression<String>(Constants.CONFIG_FIREBASE_TOKEN_SQL)
+        let notificationId = Expression<String>(Constants.CONFIG_NOTIFICATION_ID_SQL)
+        let account = Expression<String>(Constants.CONFIG_ACCOUNT_SQL)
+        let password = Expression<String>(Constants.CONFIG_PASSWORD_SQL)
+        let userId = Expression<String>(Constants.CONFIG_USER_ID_SQL)
+        var result = factory.createConfig()
+        do {
+            for row in try db!.prepare(config) {
+//                print("id: \(row[id]), firebaseToken: \(row[firebaseToken]), notificationId: \(row[notificationId]), account: \(row[account]), password: \(row[password]), userId: \(row[userId])")
+                let rowId = Int(row[id])
+                if(rowId == 1){
+                    result = factory.createConfig(firebaseToken : row[firebaseToken] ,account : row[account] ,password : row[password] ,notificationId : row[notificationId] ,userId :row[userId])
+                    break
+                }
+            }
+        } catch {
+            print (error)
+        }
+        return result
+    }
+    
+    func isConfigExist() ->Bool {
+        var result = false
+        do{
+            let configCount = try db!.scalar(config.count)
+            if(configCount > 0){
+                result = true
+            }
+        }catch {
+            print (error)
+        }
+        return result
     }
     
 }
