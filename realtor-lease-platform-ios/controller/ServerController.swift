@@ -45,7 +45,6 @@ class ServerController: Controller{
             controlModel.setDefaultAccountPassword(account: config.getAccount(),password: config.getPassword())
             break;
         case Constants.SAVE_USER_INFO_COMMAND:
-            print("=====SAVE_USER_INFO_COMMAND==\(args)===")
             let account = args[Constants.ACCOUNT_OR_MAIL] as! String
             let password = args[Constants.PASSWORD] as! String
             let userId = args[Constants.USER_ID] as! String

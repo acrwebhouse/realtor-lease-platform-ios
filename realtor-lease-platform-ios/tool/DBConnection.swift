@@ -127,9 +127,9 @@ class DBConnection {
         var result = factory.createConfig()
         do {
             for row in try db!.prepare(config) {
-//                print("id: \(row[id]), firebaseToken: \(row[firebaseToken]), notificationId: \(row[notificationId]), account: \(row[account]), password: \(row[password]), userId: \(row[userId])")
+                //print("id: \(row[id]), firebaseToken: \(row[firebaseToken]), notificationId: \(row[notificationId]), account: \(row[account]), password: \(row[password]), userId: \(row[userId])")
                 let rowId = Int(row[id])
-                if(rowId == 1){
+                if(rowId == 0){
                     result = factory.createConfig(firebaseToken : row[firebaseToken] ,account : row[account] ,password : row[password] ,notificationId : row[notificationId] ,userId :row[userId])
                     break
                 }
