@@ -61,6 +61,7 @@
 		831FE1B82AA622B8006C32FE /* ServerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerController.swift; sourceTree = "<group>"; };
 		831FE1BC2AA62331006C32FE /* NetworkErrorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorController.swift; sourceTree = "<group>"; };
 		833D4F0C2AE56DD200ED0591 /* DBConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBConnection.swift; sourceTree = "<group>"; };
+		83AE312D2AF001CD00D8E613 /* realtor-lease-platform-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "realtor-lease-platform-ios.entitlements"; sourceTree = "<group>"; };
 		83B71B7F284E37F9009254B9 /* realtor-lease-platform-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "realtor-lease-platform-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B71B82284E37F9009254B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83B71B84284E37F9009254B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -181,6 +182,7 @@
 		83B71B81284E37F9009254B9 /* realtor-lease-platform-ios */ = {
 			isa = PBXGroup;
 			children = (
+				83AE312D2AF001CD00D8E613 /* realtor-lease-platform-ios.entitlements */,
 				83CBB4062AE81F580064F882 /* role */,
 				83C85C5E2AA79D6E00D41E26 /* GUI */,
 				831FE1B52AA62192006C32FE /* controller */,
@@ -665,6 +667,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "realtor-lease-platform-ios/realtor-lease-platform-ios.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = 2997GNPT97;
@@ -689,6 +692,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "realtor-lease-platform-ios/realtor-lease-platform-ios.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = 2997GNPT97;
