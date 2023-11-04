@@ -16,6 +16,7 @@
 		831FE1B92AA622B8006C32FE /* ServerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831FE1B82AA622B8006C32FE /* ServerController.swift */; };
 		831FE1BD2AA62331006C32FE /* NetworkErrorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831FE1BC2AA62331006C32FE /* NetworkErrorController.swift */; };
 		833D4F0D2AE56DD200ED0591 /* DBConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833D4F0C2AE56DD200ED0591 /* DBConnection.swift */; };
+		83AE31312AF6B74300D8E613 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AE31302AF6B74300D8E613 /* Cache.swift */; };
 		83B71B83284E37F9009254B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B71B82284E37F9009254B9 /* AppDelegate.swift */; };
 		83B71B85284E37F9009254B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B71B84284E37F9009254B9 /* SceneDelegate.swift */; };
 		83B71B87284E37F9009254B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B71B86284E37F9009254B9 /* ViewController.swift */; };
@@ -62,6 +63,7 @@
 		831FE1BC2AA62331006C32FE /* NetworkErrorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorController.swift; sourceTree = "<group>"; };
 		833D4F0C2AE56DD200ED0591 /* DBConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBConnection.swift; sourceTree = "<group>"; };
 		83AE312D2AF001CD00D8E613 /* realtor-lease-platform-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "realtor-lease-platform-ios.entitlements"; sourceTree = "<group>"; };
+		83AE31302AF6B74300D8E613 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		83B71B7F284E37F9009254B9 /* realtor-lease-platform-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "realtor-lease-platform-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B71B82284E37F9009254B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83B71B84284E37F9009254B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				831FE1B12AA6172A006C32FE /* StringProcess.swift */,
 				831FE1B32AA61792006C32FE /* HttpClient.swift */,
 				833D4F0C2AE56DD200ED0591 /* DBConnection.swift */,
+				83AE31302AF6B74300D8E613 /* Cache.swift */,
 			);
 			path = tool;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				831FE1B72AA621B6006C32FE /* Controller.swift in Sources */,
+				83AE31312AF6B74300D8E613 /* Cache.swift in Sources */,
 				83F86FC32AB0DF1C00AABBAB /* Constants.swift in Sources */,
 				831FE1AE2AA616C6006C32FE /* Model.swift in Sources */,
 				83CBB4082AE81F720064F882 /* Config.swift in Sources */,

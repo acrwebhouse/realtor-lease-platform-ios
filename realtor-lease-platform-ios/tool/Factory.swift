@@ -33,8 +33,8 @@ class Factory {
         return Config()
     }
     
-    func createConfig(firebaseToken : String ,account : String ,password : String ,notificationId : String ,userId :String ) -> Config{
-        return Config(firebaseToken : firebaseToken ,account : account ,password : password ,notificationId : notificationId ,userId :userId )
+    func createConfig(notificationToken : String ,account : String ,password : String ,notificationId : String ,userId :String ) -> Config{
+        return Config(notificationToken : notificationToken ,account : account ,password : password ,notificationId : notificationId ,userId :userId )
     }
     
     func createDBConnection() -> DBConnection{

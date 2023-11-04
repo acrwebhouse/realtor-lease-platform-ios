@@ -10,7 +10,7 @@ import Foundation
 public class Config {
     
     var id : Int  = 0;
-    var firebaseToken : String = Constants.EMPTY_STRING ;
+    var notificationToken : String = Constants.EMPTY_STRING ;
     var account : String = Constants.EMPTY_STRING ;
     var password : String = Constants.EMPTY_STRING ;
     var notificationId : String = Constants.EMPTY_STRING ;
@@ -19,8 +19,8 @@ public class Config {
     init(){
     }
     
-    init(firebaseToken : String ,account : String ,password : String ,notificationId : String ,userId :String ){
-        self.firebaseToken = firebaseToken;
+    init(notificationToken : String ,account : String ,password : String ,notificationId : String ,userId :String ){
+        self.notificationToken = notificationToken;
         self.account = account;
         self.password = password;
         self.notificationId = notificationId;
@@ -33,7 +33,7 @@ public class Config {
             self.id = Int(attribute) ?? 0;
             break;
         case 1:
-            self.firebaseToken = attribute;
+            self.notificationToken = attribute;
             break;
         case 2:
             self.notificationId = attribute;
@@ -65,8 +65,8 @@ public class Config {
         return password
     }
     
-    func getFirebaseToken() -> String {
-        return firebaseToken
+    func getNotificationToken() -> String {
+        return notificationToken
     }
     
     func getNotificationId() -> String {

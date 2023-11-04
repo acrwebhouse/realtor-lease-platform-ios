@@ -34,7 +34,7 @@ class Constants {
     public static let DATABASE_NAME: String  = "ACRDB.db";
     public static let ID_SQL : String = "id";
     public static let TABLE_CONFIG_SQL : String = "Config";
-    public static let CONFIG_FIREBASE_TOKEN_SQL : String = "firebaseToken";
+    public static let CONFIG_NOTIFICATION_TOKEN_SQL : String = "notificationToken";
     public static let CONFIG_NOTIFICATION_ID_SQL : String = "notificationId";
     public static let CONFIG_ACCOUNT_SQL : String = "account";
     public static let CONFIG_PASSWORD_SQL : String = "password";
@@ -54,5 +54,9 @@ class Constants {
     public static let PASSWORD: String  = "password";
     public static let ACCOUNT_OR_MAIL: String  = "accountOrMail";
     public static let USER_ID: String  = "userId";
+    
+    //rest api
+    public static let ADD_NOTIFICATION_REST_API: String = SERVER_URL + "/user-service/notification/addNotification";
+    public static let EDIT_NOTIFICATION_REST_API: String = SERVER_URL + "/user-service/notification/editNotification";
     
 }

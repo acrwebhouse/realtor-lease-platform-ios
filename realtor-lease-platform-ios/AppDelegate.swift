@@ -11,8 +11,6 @@ import UserNotifications
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         UNUserNotificationCenter.current().delegate = self
@@ -39,11 +37,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-            
         let deviceTokenString = deviceToken.reduce("") {
             $0 + String(format: "%02x", $1)
         }
         print("deviceToken", deviceTokenString)
+        Cache.notificationToken = deviceTokenString
     }
     
 }

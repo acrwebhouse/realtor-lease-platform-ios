@@ -30,7 +30,7 @@ class DBConnection {
     
     func createTable(){
         let id = Expression<Int>(Constants.ID_SQL)
-        let firebaseToken = Expression<String>(Constants.CONFIG_FIREBASE_TOKEN_SQL)
+        let notificationToken = Expression<String>(Constants.CONFIG_NOTIFICATION_TOKEN_SQL)
         let notificationId = Expression<String>(Constants.CONFIG_NOTIFICATION_ID_SQL)
         let account = Expression<String>(Constants.CONFIG_ACCOUNT_SQL)
         let password = Expression<String>(Constants.CONFIG_PASSWORD_SQL)
@@ -38,7 +38,7 @@ class DBConnection {
         do {
             try db?.run(config.create { table in
                 table.column(id, primaryKey: true)
-                table.column(firebaseToken)
+                table.column(notificationToken)
                 table.column(notificationId)
                 table.column(account)
                 table.column(password)
@@ -50,7 +50,7 @@ class DBConnection {
     }
     
     func insert(){
-        let firebaseToken = Expression<String>(Constants.CONFIG_FIREBASE_TOKEN_SQL)
+        let notificationToken = Expression<String>(Constants.CONFIG_NOTIFICATION_TOKEN_SQL)
         let notificationId = Expression<String>(Constants.CONFIG_NOTIFICATION_ID_SQL)
         let account = Expression<String>(Constants.CONFIG_ACCOUNT_SQL)
         let password = Expression<String>(Constants.CONFIG_PASSWORD_SQL)
@@ -62,7 +62,7 @@ class DBConnection {
 //                account <- Constants.EMPTY_STRING ,
 //                password <- Constants.EMPTY_STRING ,
 //                userId <- Constants.EMPTY_STRING
-                firebaseToken <- "firebaseToken" ,
+                notificationToken <- "notificationToken" ,
                 notificationId <- "notificationId" ,
                 account <- "123" ,
                 password <- "456" ,
@@ -76,14 +76,14 @@ class DBConnection {
     }
     
     func insertConfig(data:Config) {
-        let firebaseToken = Expression<String>(Constants.CONFIG_FIREBASE_TOKEN_SQL)
+        let notificationToken = Expression<String>(Constants.CONFIG_NOTIFICATION_TOKEN_SQL)
         let notificationId = Expression<String>(Constants.CONFIG_NOTIFICATION_ID_SQL)
         let account = Expression<String>(Constants.CONFIG_ACCOUNT_SQL)
         let password = Expression<String>(Constants.CONFIG_PASSWORD_SQL)
         let userId = Expression<String>(Constants.CONFIG_USER_ID_SQL)
         do {
             try db?.run(config.insert(
-                firebaseToken <- "\(data.getFirebaseToken())" ,
+                notificationToken <- "\(data.getNotificationToken())" ,
                 notificationId <- "\(data.getNotificationId())" ,
                 account <- "\(data.getAccount())" ,
                 password <- "\(data.getPassword())" ,
@@ -97,7 +97,7 @@ class DBConnection {
     
     func updateConfig(data:Config) {
         let id = Expression<Int>(Constants.ID_SQL)
-        let firebaseToken = Expression<String>(Constants.CONFIG_FIREBASE_TOKEN_SQL)
+        let notificationToken = Expression<String>(Constants.CONFIG_NOTIFICATION_TOKEN_SQL)
         let notificationId = Expression<String>(Constants.CONFIG_NOTIFICATION_ID_SQL)
         let account = Expression<String>(Constants.CONFIG_ACCOUNT_SQL)
         let password = Expression<String>(Constants.CONFIG_PASSWORD_SQL)
@@ -105,7 +105,7 @@ class DBConnection {
         do {
             try db?.run(config.update(
                 id <- data.getId() ,
-                firebaseToken <- "\(data.getFirebaseToken())" ,
+                notificationToken <- "\(data.getNotificationToken())" ,
                 notificationId <- "\(data.getNotificationId())" ,
                 account <- "\(data.getAccount())" ,
                 password <- "\(data.getPassword())" ,
@@ -119,7 +119,7 @@ class DBConnection {
     
     func getConfig() -> Config {
         let id = Expression<Int>(Constants.ID_SQL)
-        let firebaseToken = Expression<String>(Constants.CONFIG_FIREBASE_TOKEN_SQL)
+        let notificationToken = Expression<String>(Constants.CONFIG_NOTIFICATION_TOKEN_SQL)
         let notificationId = Expression<String>(Constants.CONFIG_NOTIFICATION_ID_SQL)
         let account = Expression<String>(Constants.CONFIG_ACCOUNT_SQL)
         let password = Expression<String>(Constants.CONFIG_PASSWORD_SQL)
@@ -130,7 +130,7 @@ class DBConnection {
                 //print("id: \(row[id]), firebaseToken: \(row[firebaseToken]), notificationId: \(row[notificationId]), account: \(row[account]), password: \(row[password]), userId: \(row[userId])")
                 let rowId = Int(row[id])
                 if(rowId == 0){
-                    result = factory.createConfig(firebaseToken : row[firebaseToken] ,account : row[account] ,password : row[password] ,notificationId : row[notificationId] ,userId :row[userId])
+                    result = factory.createConfig(notificationToken : row[notificationToken] ,account : row[account] ,password : row[password] ,notificationId : row[notificationId] ,userId :row[userId])
                     break
                 }
             }
