@@ -68,21 +68,26 @@ class Model: NSObject {
         }
     }
     
-    func saveNotificationInfoToCloud(){
+    func saveNotificationInfo(accessToken : String){
         if (dbHelper?.isConfigExist() == true) {
             let config = getConfig()
             let notificationId = config.getNotificationId()
-            let notificationToken = config.getNotificationToken()
+            let notificationToken = Cache.notificationToken
             let userId = config.getUserId()
-            print("=saveNotificationInfoToCloud==notificationId=====\(notificationId)====")
-            print("=saveNotificationInfoToCloud==notificationToken=====\(notificationToken)====")
-            print("=saveNotificationInfoToCloud==userId=====\(userId)====")
             if(notificationId == Constants.EMPTY_STRING){
-                print("=saveNotificationInfoToCloud==addNotification====")
-                httpClient?.addNotification(controlModel: self,notificationToken: notificationToken,userId: userId)
+                httpClient?.addNotification(controlModel: self,notificationToken: notificationToken,userId: userId,accessToken : accessToken)
             }else{
-                print("=saveNotificationInfoToCloud==editNotification====")
+                httpClient?.editNotification(controlModel: self,notificationId: notificationId,notificationToken: notificationToken,userId: userId,accessToken : accessToken)
             }
+        }
+    }
+    
+    func saveNotificationIdAndToken(notificationId : String,notificationToken : String){
+        if (dbHelper?.isConfigExist() == true) {
+            let config = getConfig()
+            config.setAttribute(type: 1, attribute: notificationToken)
+            config.setAttribute(type: 2, attribute: notificationId)
+            dbHelper?.updateConfig(data: config)
         }
     }
     

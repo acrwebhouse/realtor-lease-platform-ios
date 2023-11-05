@@ -42,11 +42,6 @@ class ServerController: Controller{
             break;
         case Constants.SET_ACCOUNT_PASSWORD_COMMAND:
             let config = controlModel.getConfig()
-//            print("====getAccount=====\(config.getAccount())==")
-//            print("====getPassword=====\(config.getPassword())==")
-//            print("====getUserId=====\(config.getUserId())==")
-//            print("====getNotificationToken=====\(config.getNotificationToken())==")
-            controlModel.saveNotificationInfoToCloud()
             controlModel.setDefaultAccountPassword(account: config.getAccount(),password: config.getPassword())
             break;
         case Constants.SAVE_USER_INFO_COMMAND:
@@ -55,6 +50,10 @@ class ServerController: Controller{
             let userId = args[Constants.USER_ID] as! String
             saveUserInfo(account : account , password : password , userId : userId )
             break;
+        case Constants.SAVE_NOTIFICATION_INFO_COMMAND:
+            let accessToken = args[Constants.ACCESS_TOKEN] as! String
+            saveNotificationInfo(accessToken : accessToken)
+            break
         default:
             break;
         }
@@ -62,6 +61,10 @@ class ServerController: Controller{
     
     func saveUserInfo(account : String , password : String , userId : String ){
         controlModel.saveUserInfo(account : account , password : password , userId : userId )
+    }
+    
+    func saveNotificationInfo(accessToken : String){
+        controlModel.saveNotificationInfo(accessToken : accessToken)
     }
     
     func callUp(phoneNumber : String){

@@ -72,9 +72,9 @@ class JsInterface {
             
             function saveUserInfo(accountOrMail,password,userId) {
                 const args = {
-                        accountOrMail,
-                        password,
-                        userId
+                    accountOrMail,
+                    password,
+                    userId
                 }
                 window.webkit.messageHandlers.\(Constants.JS_TO_IOS_INTERFACE).postMessage(getExeFuncMessage("saveUserInfo",args));
             }
@@ -82,6 +82,13 @@ class JsInterface {
             function setAccountPassword() {
                 const args = {}
                 window.webkit.messageHandlers.\(Constants.JS_TO_IOS_INTERFACE).postMessage(getExeFuncMessage("setAccountPassword",args));
+            }
+            
+            function saveNotificationInfo(accessToken) {
+                const args = {
+                    accessToken
+                }
+                window.webkit.messageHandlers.\(Constants.JS_TO_IOS_INTERFACE).postMessage(getExeFuncMessage("saveNotificationInfo",args));
             }
             
             \(Constants.JS_TO_IOS_INTERFACE).callNative = callNative
@@ -94,6 +101,7 @@ class JsInterface {
             \(Constants.JS_TO_IOS_INTERFACE).addLineFriend = addLineFriend
             \(Constants.JS_TO_IOS_INTERFACE).saveUserInfo = saveUserInfo
             \(Constants.JS_TO_IOS_INTERFACE).setAccountPassword = setAccountPassword
+            \(Constants.JS_TO_IOS_INTERFACE).saveNotificationInfo = saveNotificationInfo
             
             """
     

@@ -29,6 +29,7 @@ class Constants {
     public static let ADD_LIN_FRIEND_COMMAND: String  = "addLineFriend"
     public static let SET_ACCOUNT_PASSWORD_COMMAND: String  = "setAccountPassword"
     public static let SAVE_USER_INFO_COMMAND: String  = "saveUserInfo"
+    public static let SAVE_NOTIFICATION_INFO_COMMAND: String  = "saveNotificationInfo"
     
     //db
     public static let DATABASE_NAME: String  = "ACRDB.db";
@@ -59,7 +60,10 @@ class Constants {
     public static let TOKEN: String  = "token";
     public static let TYPE: String  = "type";
     public static let NOTIFICATION_TYPE: Int  = 2;
-    
+    public static let ACCESS_TOKEN: String  = "accessToken";
+    public static let X_TOKEN: String  = "x-token";
+    public static let DATA: String  = "data";
+    public static let _ID: String  = "_id";
     
     //rest api
     public static let ADD_NOTIFICATION_REST_API: String = SERVER_URL + "/user-service/notification/addNotification";
