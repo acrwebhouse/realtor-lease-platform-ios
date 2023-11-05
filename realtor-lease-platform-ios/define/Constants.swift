@@ -54,6 +54,12 @@ class Constants {
     public static let PASSWORD: String  = "password";
     public static let ACCOUNT_OR_MAIL: String  = "accountOrMail";
     public static let USER_ID: String  = "userId";
+    public static let ID: String  = "id";
+    public static let NOTIFICATION_TOKEN: String  = "notificationToken";
+    public static let TOKEN: String  = "token";
+    public static let TYPE: String  = "type";
+    public static let NOTIFICATION_TYPE: Int  = 2;
+    
     
     //rest api
     public static let ADD_NOTIFICATION_REST_API: String = SERVER_URL + "/user-service/notification/addNotification";

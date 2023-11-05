@@ -14,6 +14,7 @@ class Model: NSObject {
     var viewController :UIViewController? = nil
     var factory : Factory? = nil
     var dbHelper : DBConnection? = nil
+    var httpClient : HttpClient? = nil
     
     func setViewController(ViewController:UIViewController)
     {
@@ -31,6 +32,10 @@ class Model: NSObject {
     
     func connectDB(){
         dbHelper = self.factory?.createDBConnection()
+    }
+    
+    func initHttp(){
+        httpClient = self.factory?.createHttpClient()
     }
     
     func getConfig() -> Config{
@@ -60,6 +65,24 @@ class Model: NSObject {
             config?.setAttribute(type: 4, attribute: password)
             config?.setAttribute(type: 5, attribute: userId)
             dbHelper?.insertConfig(data: config!)
+        }
+    }
+    
+    func saveNotificationInfoToCloud(){
+        if (dbHelper?.isConfigExist() == true) {
+            let config = getConfig()
+            let notificationId = config.getNotificationId()
+            let notificationToken = config.getNotificationToken()
+            let userId = config.getUserId()
+            print("=saveNotificationInfoToCloud==notificationId=====\(notificationId)====")
+            print("=saveNotificationInfoToCloud==notificationToken=====\(notificationToken)====")
+            print("=saveNotificationInfoToCloud==userId=====\(userId)====")
+            if(notificationId == Constants.EMPTY_STRING){
+                print("=saveNotificationInfoToCloud==addNotification====")
+                httpClient?.addNotification(controlModel: self,notificationToken: notificationToken,userId: userId)
+            }else{
+                print("=saveNotificationInfoToCloud==editNotification====")
+            }
         }
     }
     

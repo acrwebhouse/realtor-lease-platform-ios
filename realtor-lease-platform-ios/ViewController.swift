@@ -46,6 +46,7 @@ class ViewController: UIViewController , WKScriptMessageHandler , WKNavigationDe
         controlModel?.setFactory(factory: factory!)
         controlModel?.setViewController(ViewController: self)
         controlModel?.connectDB()
+        controlModel?.initHttp()
     }
     
     func initGUI() {
