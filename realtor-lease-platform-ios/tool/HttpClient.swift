@@ -14,7 +14,7 @@ class HttpClient {
         // 定义你要发送的数据，通常是一个字典
         let parameters: [String: Any] = [
             Constants.TOKEN: notificationToken,
-            Constants.TYPE: Constants.NOTIFICATION_TYPE,
+            Constants.TYPE: Constants.NOTIFICATION_TYPE_IOS,
             Constants.USER_ID:userId
         ]
         
@@ -49,7 +49,7 @@ class HttpClient {
         let parameters: [String: Any] = [
             Constants.ID: notificationId,
             Constants.TOKEN: notificationToken,
-            Constants.TYPE: Constants.NOTIFICATION_TYPE,
+            Constants.TYPE: Constants.NOTIFICATION_TYPE_IOS,
             Constants.USER_ID:userId
         ]
         

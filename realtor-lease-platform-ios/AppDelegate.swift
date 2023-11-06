@@ -52,6 +52,8 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
         print(#function)
         let content = response.notification.request.content
         print(content.userInfo)
+        // 发布通知，将userInfo作为参数传递
+        NotificationCenter.default.post(name: NSNotification.Name(Constants.NOTIFICATION_RECEIVED_EVENT), object: nil, userInfo: content.userInfo)
         completionHandler()
     }
     

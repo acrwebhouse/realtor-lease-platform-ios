@@ -44,4 +44,7 @@ class StringProcess {
         return "setDefaultAccountPassword(\"\(account)\",\"\(password)\")"
     }
     
+    static func getReserveHouseUrl(reserveHouseId:String) -> String {
+        return Constants.SERVER_URL + "/21/" + reserveHouseId;
+    }
 }

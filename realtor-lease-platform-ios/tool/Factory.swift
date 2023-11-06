@@ -25,6 +25,10 @@ class Factory {
         return ServerController(webView: webView, model: model)
     }
     
+    func createServerController(webView: WKWebView, model: Model,url:String) -> ServerController{
+        return ServerController(webView: webView, model: model, url:url)
+    }
+    
     func createNetworkErrorController(webView: WKWebView, model: Model) -> NetworkErrorController{
         return NetworkErrorController(webView: webView, model: model)
     }

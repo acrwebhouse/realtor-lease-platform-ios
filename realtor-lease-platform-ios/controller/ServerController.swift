@@ -11,8 +11,13 @@ class ServerController: Controller{
     override init(webView: WKWebView, model:Model){
             super.init(webView: webView, model: model)
             self.loadUrl(url: Constants.SERVER_URL)
-        }
-        
+    }
+    
+    init(webView: WKWebView, model:Model,url:String){
+            super.init(webView: webView, model: model)
+            self.loadUrl(url: url)
+    }
+    
     override func scriptCallbackHandler(funcMsgDic:Dictionary<String, Any>, msg:Dictionary<String, Any>){
         
     }

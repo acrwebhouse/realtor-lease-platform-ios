@@ -16,9 +16,12 @@ class Constants {
     //javascript
     public static let JS_TO_IOS_INTERFACE: String = "jsToIosInterface";
     public static let IOS_TO_JS_INTERFACE: String = "iosToJsInterface";
+    
+    //page
     public static let SERVER_PAGE_NAME: String = "serverPage";
     public static let NETWORK_ERROR_PAGE_NAME: String = "networkErrorPage";
     public static let NETWORK_ERROR_URL: String = "networkErrorWeb";
+    public static let RESERVE_HOUSE_PAGE_NAME: String = "reserveHousePage";
     
     //commandName
     public static let LOAD_URL_COMMAND: String  = "loadUrl";
@@ -59,7 +62,7 @@ class Constants {
     public static let NOTIFICATION_TOKEN: String  = "notificationToken";
     public static let TOKEN: String  = "token";
     public static let TYPE: String  = "type";
-    public static let NOTIFICATION_TYPE: Int  = 2;
+    public static let NOTIFICATION_TYPE_IOS: Int  = 2;
     public static let ACCESS_TOKEN: String  = "accessToken";
     public static let X_TOKEN: String  = "x-token";
     public static let DATA: String  = "data";
@@ -68,5 +71,16 @@ class Constants {
     //rest api
     public static let ADD_NOTIFICATION_REST_API: String = SERVER_URL + "/user-service/notification/addNotification";
     public static let EDIT_NOTIFICATION_REST_API: String = SERVER_URL + "/user-service/notification/editNotification";
+    
+    //notification
+    public static let NOTIFICATION_ALERT = "alert";
+    public static let NOTIFICATION_APS = "aps";
+    public static let NOTIFICATION_TYPE = "type";
+    public static let NOTIFICATION_TITLE = "title";
+    public static let NOTIFICATION_CONTENT = "body";
+    public static let NOTIFICATION_RESERVE_HOUSE_ID = "reserveHouseId";
+    public static let NOTIFICATION_TYPE_RESERVE_HOUSE = 1;
+    public static let NOTIFICATION_TYPE_SYSTEM = 0;
+    public static let NOTIFICATION_RECEIVED_EVENT = "PushNotificationReceived"
     
 }

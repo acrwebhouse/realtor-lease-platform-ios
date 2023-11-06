@@ -107,6 +107,19 @@ class Model: NSObject {
         
     }
     
+    func changeQuickPage(webView: WKWebView, page:String,url:String)
+    {
+        print("change quick page to : \(page)");
+        self.webView = webView;
+        switch page {
+        case Constants.RESERVE_HOUSE_PAGE_NAME:
+            controller = self.factory?.createServerController(webView: webView, model: self,url:url)
+        default:
+                break
+        }
+        
+    }
+    
     func setDefaultAccountPassword(account : String,password : String)
     {
         let setDefaultAccountPasswordJsFunc = StringProcess.getSetDefaultAccountPasswordJsFunc(account: account,password: password)
