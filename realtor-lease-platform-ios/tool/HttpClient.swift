@@ -32,8 +32,9 @@ class HttpClient {
                 // 处理成功的响应
                 if let json = value as? [String: Any] {
                     // 解析和使用JSON响应
-                    let data = json[Constants.DATA] as? [String: Any]
-                    let notificationId : String = data?[Constants._ID] as! String
+                    print("成功：\(json)")
+                    let data = json[Constants.DATA] as? [String: String]
+                    let notificationId : String = data?[Constants._ID] ?? Constants.EMPTY_STRING
                     if(notificationId != Constants.EMPTY_STRING){
                         controlModel.saveNotificationIdAndToken(notificationId : notificationId,notificationToken:notificationToken)
                     }
@@ -66,6 +67,11 @@ class HttpClient {
                 if let json = value as? [String: Any] {
                     // 解析和使用JSON响应
                     print("成功：\(json)")
+                    let data = json[Constants.DATA] as? [String: String]
+                    let notificationId : String = data?[Constants._ID] ?? Constants.EMPTY_STRING
+                    if(notificationId != Constants.EMPTY_STRING){
+                        controlModel.saveNotificationIdAndToken(notificationId : notificationId,notificationToken:notificationToken)
+                    }
                 }
             case .failure(let error):
                 // 处理错误
