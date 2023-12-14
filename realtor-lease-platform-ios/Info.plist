@@ -62,9 +62,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>LSApplicationQueriesSchemes</key>
-    <array>
-    <string>line</string>
-    </array>
+	<key>CFBundleDisplayName</key>
+	<string>$(INFOPLIST_KEY_CFBundleDisplayName)</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>line</string>
+	</array>
 </dict>
 </plist>

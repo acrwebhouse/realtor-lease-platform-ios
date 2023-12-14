@@ -677,7 +677,6 @@
 				DEVELOPMENT_TEAM = 2997GNPT97;
 				INFOPLIST_FILE = "realtor-lease-platform-ios/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "租重點";
-				"INFOPLIST_KEY_CFBundleDisplayName[sdk=iphoneos*]" = "租重點";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -702,7 +701,6 @@
 				DEVELOPMENT_TEAM = 2997GNPT97;
 				INFOPLIST_FILE = "realtor-lease-platform-ios/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "租重點";
-				"INFOPLIST_KEY_CFBundleDisplayName[sdk=iphoneos*]" = "租重點";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
