@@ -8,7 +8,7 @@
 import UIKit
 import WebKit
 
-class ViewController: UIViewController , WKScriptMessageHandler , WKNavigationDelegate {
+class ViewController: UIViewController , WKScriptMessageHandler , WKUIDelegate , WKNavigationDelegate {
     var url = Constants.SERVER_URL
     var factory : Factory? = nil
     var webView: WKWebView? = nil
@@ -86,11 +86,12 @@ class ViewController: UIViewController , WKScriptMessageHandler , WKNavigationDe
         let config = WKWebViewConfiguration()
         config.userContentController = contentController
         config.websiteDataStore = WKWebsiteDataStore.default()
-        
+        config.mediaTypesRequiringUserActionForPlayback = []
         self.webView = WKWebView(
                     frame: CGRect(x:0, y:20, width: self.view.frame.width, height:self.view.frame.height-20),
                     configuration: config
                 )
+        self.webView!.uiDelegate = self
         self.webView!.navigationDelegate = self
         // 禁止缩放手势
         self.webView!.scrollView.bouncesZoom = true
@@ -103,6 +104,15 @@ class ViewController: UIViewController , WKScriptMessageHandler , WKNavigationDe
     func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
         controlModel?.changePage(webView: webView ?? WKWebView(), page: Constants.NETWORK_ERROR_PAGE_NAME)
     }
+    
+    // Implement the delegate methods for media capture
+        func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
+            let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: Constants.OK, style: .default, handler: { _ in
+                completionHandler()
+            }))
+            present(alertController, animated: true, completion: nil)
+        }
     
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return nil

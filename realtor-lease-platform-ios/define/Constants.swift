@@ -68,6 +68,7 @@ class Constants {
     public static let X_TOKEN: String  = "x-token";
     public static let DATA: String  = "data";
     public static let _ID: String  = "_id";
+    public static let OK: String  = "OK";
     
     //rest api
     public static let ADD_NOTIFICATION_REST_API: String = SERVER_URL + "/user-service/notification/addNotification";
