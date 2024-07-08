@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>請您允許使用設備的照片</string>
+	<string>請您允許使用設備照片上傳房屋相關資料</string>
 	<key>NSCameraUsageDescription</key>
-	<string>請您允許使用設備的相機和照片</string>
+	<string>請您允許使用設備相機上傳房屋相關資料</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
